@@ -22,7 +22,7 @@ export const HeroImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("./imgs/hero/hero.png");
+  background-image: url("./imgs/hero/hero.webp");
   clip-path: inset(0 0 100% 0);
   will-change: clip-path;
   z-index: -1;

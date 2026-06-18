@@ -16,7 +16,7 @@ export const useHeroAnimations = () => {
     timeline.current
       .to(imageRef.current, {
         clipPath: "inset(0% 0% 0% 0%)",
-        duration: 2,
+        duration: 1.75,
         ease: "power2.out",
         stagger: 0.3,
       })

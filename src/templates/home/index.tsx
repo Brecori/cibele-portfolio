@@ -1,13 +1,23 @@
-import { FC } from "react";
-import { Navbar } from "../shared/navbar";
+import { Navbar } from "./navbar";
 import { Hero } from "./hero";
+import { Experiences } from "./experiences";
+import dynamic from "next/dynamic";
+import { FC } from "react";
+
+const VisualExperience = dynamic(
+  () => import("./visual-experiences").then((mod) => mod.VisualExperience),
+  {
+    loading: () => <p>Loading...</p>,
+  },
+);
 
 export const HomeTemplate: FC = () => {
   return (
     <>
       <Navbar />
       <Hero />
-      <div style={{ height: "100vh" }} />
+      <Experiences />
+      <VisualExperience />
     </>
   );
 };

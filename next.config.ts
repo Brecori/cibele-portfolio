@@ -6,6 +6,9 @@ const nextConfig: NextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    remotePatterns: [new URL("https://dummyimage.com/**")],
+  },
 };
 
 export default nextConfig;
