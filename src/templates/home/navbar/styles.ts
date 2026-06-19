@@ -4,7 +4,7 @@ import { theme } from "@/styles/theme";
 
 export const Navbar = styled.nav<{ $isScrolled: boolean }>`
   height: ${({ $isScrolled }) => ($isScrolled ? "6.8rem" : "8.8rem")};
-  padding-inline: 15rem;
+  padding-inline: var(--default-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -13,9 +13,13 @@ export const Navbar = styled.nav<{ $isScrolled: boolean }>`
   left: 0;
   right: 0;
   background-color: ${theme.darkBlack};
+  border-bottom: 0.1rem solid
+    ${({ $isScrolled }) =>
+      $isScrolled ? theme.fadedWhite + "50" : "transparent"};
   transition:
     height 0.3s ease-in-out,
-    background-color 0.3s ease-in-out;
+    background-color 0.3s ease-in-out,
+    border-color 0.3s ease-in-out;
   z-index: 10;
 `;
 

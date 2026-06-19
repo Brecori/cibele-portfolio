@@ -30,6 +30,9 @@ export const GlobalStyles = createGlobalStyle`
   body {
     position: relative;
     overflow-x: hidden;
+
+    ${mediaMaxDesktop1024`
+    --default-padding: 8rem;`}
   }
 
 
@@ -74,6 +77,10 @@ export const GlobalStyles = createGlobalStyle`
     appearance: none;
     border: none;
     outline: none;
+  }
+
+  :root {
+    --default-padding: 20rem;
   }
 
 

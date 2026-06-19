@@ -4,4 +4,5 @@ export interface BrandingCardProps {
   width: number;
   height: number;
   title?: string;
+  href?: string;
 }

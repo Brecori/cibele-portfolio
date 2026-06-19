@@ -3,22 +3,26 @@ import * as S from "./styles";
 import { visualExperiencesConstants as C } from "./constants";
 import { SectionTitle } from "@/components/section-title";
 import { ContentParagraph } from "@/components/content-paragraph";
-import { ResponsiveImage } from "@/components/responsive-image";
+import AnimatedContent from "@/components/animated-content";
 
 export const VisualExperience: FC = () => {
   return (
     <S.VisualExperiencesSection>
-      <ResponsiveImage
-        src={C.image.src}
-        alt={C.image.alt}
-        width={660}
-        height={413}
-        loading="lazy"
-      />
-      <S.Content>
-        <SectionTitle>{C.title}</SectionTitle>
-        <ContentParagraph>{C.content}</ContentParagraph>
-      </S.Content>
+      <AnimatedContent direction="right">
+        <S.VisualImage
+          src={C.image.src}
+          alt={C.image.alt}
+          width={660}
+          height={413}
+          loading="lazy"
+        />
+      </AnimatedContent>
+      <AnimatedContent direction="left">
+        <S.Content>
+          <SectionTitle>{C.title}</SectionTitle>
+          <ContentParagraph>{C.content}</ContentParagraph>
+        </S.Content>
+      </AnimatedContent>
     </S.VisualExperiencesSection>
   );
 };

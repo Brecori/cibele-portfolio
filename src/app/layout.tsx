@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import StyledComponentsRegistry from "@/lib/registry";
 import { GlobalStyles } from "@/styles/global";
-import { AppThemeProvider } from "@/contexts/theme-provider";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -24,10 +23,8 @@ export default function RootLayout({
     <html lang="en" className={`${lato.variable}`}>
       <body>
         <StyledComponentsRegistry>
-          <AppThemeProvider>
-            <GlobalStyles />
-            {children}
-          </AppThemeProvider>
+          <GlobalStyles />
+          {children}
         </StyledComponentsRegistry>
       </body>
     </html>

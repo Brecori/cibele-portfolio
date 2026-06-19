@@ -1,0 +1,82 @@
+import { theme } from "@/styles/theme";
+import styled from "styled-components";
+
+export const Footer = styled.footer`
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  align-items: center;
+  gap: 4.8rem;
+  min-height: 8.8rem;
+  margin-top: 10rem;
+  padding-inline: var(--default-padding);
+  background-color: ${theme.darkBlack};
+`;
+
+export const Copyright = styled.p`
+  font-size: 1.6rem;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: ${theme.white};
+  text-align: center;
+`;
+
+export const SocialLinks = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+`;
+
+export const SocialLink = styled.a`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-0.3rem);
+  }
+`;
+
+export const MadeByLink = styled.a`
+  position: relative;
+  transition: color 0.3s ease-in-out;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    height: 0.1rem;
+    background-color: ${theme.white};
+    bottom: -0.2rem;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  &::before {
+    left: 0;
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+
+  &::after {
+    right: 0;
+    width: 0;
+    transition: width 0.3s 0.5s ease-in-out;
+  }
+
+  &:hover {
+    color: ${theme.fadedWhite};
+
+    &::before,
+    &::after {
+      background-color: ${theme.fadedWhite};
+    }
+
+    &::before {
+      width: 0;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+`;

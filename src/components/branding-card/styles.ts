@@ -1,7 +1,8 @@
 import { theme } from "@/styles/theme";
+import { css } from "styled-components";
 import styled from "styled-components";
 
-export const BrandingCard = styled.div`
+const brandingCardStyles = css`
   width: 19.2rem;
   height: 10.08rem;
   border-radius: 0.8rem;
@@ -15,4 +16,13 @@ export const BrandingCard = styled.div`
   &:hover {
     transform: translateY(-0.5rem);
   }
+`;
+
+export const BrandingCard = styled.div`
+  ${brandingCardStyles}
+`;
+
+export const BrandingCardLink = styled.a`
+  ${brandingCardStyles}
+  text-decoration: none;
 `;

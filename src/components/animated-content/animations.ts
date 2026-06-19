@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useCallback, useRef, useState } from "react";
+import { AnimatedContentDirection } from "./props";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -10,6 +11,7 @@ export const useAnimatedContentAnimations = (
   duration?: number,
   stagger?: number,
   startPosition: number = 95,
+  direction: AnimatedContentDirection = "up",
   preventReAnimate: boolean = false,
   isMobile?: boolean,
   onAnimationComplete?: () => void,
@@ -67,6 +69,7 @@ export const useAnimatedContentAnimations = (
 
         animationRef.current = gsap.to(itemRefs.current, {
           opacity: 1,
+          x: 0,
           y: 0,
           duration: calculatedDuration,
           stagger: calculatedStagger,
@@ -103,6 +106,7 @@ export const useAnimatedContentAnimations = (
     duration,
     stagger,
     startPosition,
+    direction,
     preventReAnimate,
     isMobile,
     onAnimationComplete,

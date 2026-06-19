@@ -12,6 +12,7 @@ const AnimatedContent: FC<AnimatedContentProps> = ({
   duration,
   stagger,
   startPosition,
+  direction = "up",
   preventReAnimate,
   isMobile,
   onAnimationComplete,
@@ -22,6 +23,7 @@ const AnimatedContent: FC<AnimatedContentProps> = ({
       duration,
       stagger,
       startPosition,
+      direction,
       preventReAnimate,
       isMobile,
       onAnimationComplete,
@@ -34,6 +36,7 @@ const AnimatedContent: FC<AnimatedContentProps> = ({
       ref={containerRef}
       className={className}
       $hasAnimated={hasAnimated}
+      $direction={direction}
     >
       {childrenArray.map((child, i) => (
         <S.Item ref={setItemRefs(i)} key={i}>

@@ -9,9 +9,12 @@ export const BrandingCard: FC<BrandingCardProps> = ({
   width,
   height,
   title,
+  href,
 }) => {
+  const CardElement = href ? S.BrandingCardLink : S.BrandingCard;
+
   return (
-    <S.BrandingCard title={title}>
+    <CardElement title={title} href={href}>
       <ResponsiveImage
         src={logoSrc}
         alt={logoAlt}
@@ -19,6 +22,6 @@ export const BrandingCard: FC<BrandingCardProps> = ({
         height={height}
         loading="lazy"
       />
-    </S.BrandingCard>
+    </CardElement>
   );
 };
