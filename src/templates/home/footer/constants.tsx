@@ -44,7 +44,7 @@ export const footerConstants = {
     },
   ],
   copyright: (currentYear: number) => (
-    <p>
+    <>
       © {currentYear} Todos os direitos reservados. <br />
       Feito por{" "}
       <S.MadeByLink
@@ -54,6 +54,6 @@ export const footerConstants = {
       >
         Breno Tosi
       </S.MadeByLink>
-    </p>
+    </>
   ),
 };

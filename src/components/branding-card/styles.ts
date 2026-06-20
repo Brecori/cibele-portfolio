@@ -1,8 +1,9 @@
+import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
+import { ResponsiveImage } from "@/components/responsive-image";
 import { theme } from "@/styles/theme";
-import { css } from "styled-components";
 import styled from "styled-components";
 
-const brandingCardStyles = css`
+export const BrandingCard = styled.div`
   width: 19.2rem;
   height: 10.08rem;
   border-radius: 0.8rem;
@@ -16,13 +17,25 @@ const brandingCardStyles = css`
   &:hover {
     transform: translateY(-0.5rem);
   }
+
+  ${mediaMaxDesktop1024`
+    width: 14.4rem;
+    height: 7.56rem;
+  `}
+
+  ${mediaMaxMobile`
+    width: 19.2rem;
+    height: 10.08rem;
+  `}
 `;
 
-export const BrandingCard = styled.div`
-  ${brandingCardStyles}
-`;
+export const BrandingCardImage = styled(ResponsiveImage)<{
+  $width: number;
+  $mobileWidth?: number;
+}>`
+  width: ${({ $width }) => $width / 10}rem;
 
-export const BrandingCardLink = styled.a`
-  ${brandingCardStyles}
-  text-decoration: none;
+  ${mediaMaxDesktop1024`
+    width: ${({ $mobileWidth, $width }) => ($mobileWidth ?? $width) / 10}rem;
+  `}
 `;

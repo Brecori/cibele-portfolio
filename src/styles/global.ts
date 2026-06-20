@@ -33,6 +33,9 @@ export const GlobalStyles = createGlobalStyle`
 
     ${mediaMaxDesktop1024`
     --default-padding: 8rem;`}
+
+    ${mediaMaxMobile`
+    --default-padding: 4rem;`}
   }
 
 
@@ -42,6 +45,8 @@ export const GlobalStyles = createGlobalStyle`
     -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
     -webkit-text-size-adjust: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
 
     ${mediaMaxDesktop1024`
       font-size: calc(100vw / 1024 * 10);
@@ -49,6 +54,7 @@ export const GlobalStyles = createGlobalStyle`
 
     ${mediaMaxMobile`
       font-size: calc(100vw / 599 * 10);
+      scroll-padding-top: 12rem;
     `}
   }
 

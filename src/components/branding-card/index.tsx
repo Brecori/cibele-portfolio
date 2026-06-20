@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { BrandingCardProps } from "./props";
 import * as S from "./styles";
-import { ResponsiveImage } from "../responsive-image";
 
 export const BrandingCard: FC<BrandingCardProps> = ({
   logoSrc,
@@ -9,19 +8,17 @@ export const BrandingCard: FC<BrandingCardProps> = ({
   width,
   height,
   title,
-  href,
 }) => {
-  const CardElement = href ? S.BrandingCardLink : S.BrandingCard;
-
   return (
-    <CardElement title={title} href={href}>
-      <ResponsiveImage
+    <S.BrandingCard title={title}>
+      <S.BrandingCardImage
         src={logoSrc}
         alt={logoAlt}
+        $width={width}
         width={width}
         height={height}
         loading="lazy"
       />
-    </CardElement>
+    </S.BrandingCard>
   );
 };

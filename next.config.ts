@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [new URL("https://dummyimage.com/**")],
   },
+  allowedDevOrigins: ["192.168.0.157"],
 };
 
 export default nextConfig;

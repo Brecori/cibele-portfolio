@@ -1,5 +1,4 @@
 import { FC } from "react";
-import { ResponsiveImage } from "@/components/responsive-image";
 import { footerConstants as C } from "./constants";
 import * as S from "./styles";
 
@@ -9,7 +8,7 @@ export const Footer: FC = () => {
   return (
     <S.Footer>
       <a href={C.logo.href}>
-        <ResponsiveImage
+        <S.FooterLogo
           src={C.logo.src}
           alt={C.logo.alt}
           width={C.logo.width}
@@ -29,9 +28,10 @@ export const Footer: FC = () => {
             aria-label={socialLink.label}
             title={socialLink.label}
           >
-            <ResponsiveImage
+            <S.FooterIcon
               src={socialLink.icon.src}
               alt={socialLink.icon.alt}
+              $width={socialLink.icon.width}
               width={socialLink.icon.width}
               height={socialLink.icon.height}
             />

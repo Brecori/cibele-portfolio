@@ -8,7 +8,7 @@ import AnimatedContent from "@/components/animated-content";
 export const VisualExperience: FC = () => {
   return (
     <S.VisualExperiencesSection>
-      <AnimatedContent direction="right">
+      <AnimatedContent>
         <S.VisualImage
           src={C.image.src}
           alt={C.image.alt}
@@ -17,7 +17,7 @@ export const VisualExperience: FC = () => {
           loading="lazy"
         />
       </AnimatedContent>
-      <AnimatedContent direction="left">
+      <AnimatedContent>
         <S.Content>
           <SectionTitle>{C.title}</SectionTitle>
           <ContentParagraph>{C.content}</ContentParagraph>

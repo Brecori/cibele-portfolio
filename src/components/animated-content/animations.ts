@@ -52,7 +52,7 @@ export const useAnimatedContentAnimations = (
 
         const isDesktop = window.matchMedia("(min-width: 769px)").matches;
 
-        const defaultDuration = isDesktop ? 2.5 : 0.8;
+        const defaultDuration = isDesktop ? 2 : 0.8;
         const defaultStagger = isDesktop ? 0.2 : 0.1;
 
         const calculatedDuration = duration

@@ -1,8 +1,12 @@
 import Image from "next/image";
 import styled from "styled-components";
 import { theme } from "@/styles/theme";
+import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
 
-export const Navbar = styled.nav<{ $isScrolled: boolean }>`
+export const Navbar = styled.nav<{
+  $isScrolled: boolean;
+  $isMenuOpen: boolean;
+}>`
   height: ${({ $isScrolled }) => ($isScrolled ? "6.8rem" : "8.8rem")};
   padding-inline: var(--default-padding);
   display: flex;
@@ -14,24 +18,42 @@ export const Navbar = styled.nav<{ $isScrolled: boolean }>`
   right: 0;
   background-color: ${theme.darkBlack};
   border-bottom: 0.1rem solid
-    ${({ $isScrolled }) =>
-      $isScrolled ? theme.fadedWhite + "50" : "transparent"};
+    ${({ $isScrolled, $isMenuOpen }) =>
+      $isScrolled || $isMenuOpen ? theme.fadedWhite + "50" : "transparent"};
   transition:
     height 0.3s ease-in-out,
     background-color 0.3s ease-in-out,
     border-color 0.3s ease-in-out;
   z-index: 10;
+
+  ${mediaMaxMobile`
+    height: 10rem;
+  `}
 `;
 
 export const Logo = styled(Image)`
   width: 3.3rem;
   height: 4.4rem;
+
+  ${mediaMaxDesktop1024`
+    width: 2.6rem;
+  `}
+
+  ${mediaMaxMobile`
+    width: 14rem;
+  `}
 `;
 
 export const NavbarLinks = styled.ul`
   display: flex;
   gap: 2.4rem;
   align-items: center;
+
+  ${mediaMaxMobile`
+    flex-direction: column;
+    gap: 6rem;
+    align-items: flex-start;
+  `}
 `;
 
 export const NavbarLink = styled.li`
@@ -71,6 +93,25 @@ export const NavbarLink = styled.li`
   &:hover::before {
     width: 50%;
   }
+
+  ${mediaMaxDesktop1024`
+    font-size: 1.6rem;
+  `}
+
+  ${mediaMaxMobile`
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+
+    &::after, &::before {
+      width: 50%;
+    }
+
+    &:hover {
+      transform: translateY(0);
+    }
+  `}
 `;
 
 export const Button = styled.a`
@@ -112,4 +153,23 @@ export const Button = styled.a`
       height: 100%;
     }
   }
+
+  ${mediaMaxDesktop1024`
+    font-size: 1.4rem;
+    padding: 0.8rem 1.4rem;
+  `}
+
+  ${mediaMaxMobile`
+    font-size: 3.2rem;
+    padding: 1.2rem 2.4rem;
+    text-align: center;
+  `}
+`;
+
+export const NavbarMenuContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding-block: 8rem 4rem;
 `;

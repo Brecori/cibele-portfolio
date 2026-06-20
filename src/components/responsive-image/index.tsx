@@ -11,8 +11,6 @@ export const ResponsiveImage: FC<ResponsiveImageProps> = ({
 }) => {
   return (
     <S.ResponsiveImage
-      $width={width}
-      $height={height}
       alt={alt}
       src={src}
       width={width}

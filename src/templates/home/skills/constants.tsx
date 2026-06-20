@@ -1,4 +1,5 @@
 export const skillsConstants = {
+  id: "skills",
   title: "Habilidades para produtos digitais",
   skillsList: [
     {

@@ -5,25 +5,20 @@ import * as S from "./styles";
 
 export const Gallerys: FC = () => {
   return (
-    <S.GallerysSection>
+    <S.GallerysSection id={C.id}>
       <AnimatedContent>
         <S.GallerysTitle>{C.title}</S.GallerysTitle>
       </AnimatedContent>
 
-      <S.GallerysGrid>
-        {C.gallerysList.map((gallery, index) => (
-          <AnimatedContent
+      <S.GallerysGrid stagger={0.15}>
+        {C.gallerysList.map((gallery) => (
+          <S.GalleryCard
             key={gallery.key}
-            delay={0.15 * (index + 1)}
-            duration={0.9}
+            href={gallery.href}
+            $backgroundImg={gallery.backgroundImg}
           >
-            <S.GalleryCard
-              href={gallery.href}
-              $backgroundImg={gallery.backgroundImg}
-            >
-              <S.GalleryTitle>{gallery.title}</S.GalleryTitle>
-            </S.GalleryCard>
-          </AnimatedContent>
+            <S.GalleryTitle>{gallery.title}</S.GalleryTitle>
+          </S.GalleryCard>
         ))}
       </S.GallerysGrid>
     </S.GallerysSection>

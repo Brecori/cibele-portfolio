@@ -1,6 +1,5 @@
-import { BrandingCardGridProps } from "@/components/branding-card-grid/props";
-
 export const experiencesConstants = {
+  id: "experiences",
   title: "Experiência com grandes marcas",
   experiencesList: [
     {

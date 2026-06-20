@@ -1,4 +1,5 @@
 export const projectsConstants = {
+  id: "projects",
   title: "Reconhecimentos e conquistas",
   subtitle:
     "Projetos reconhecidos em desafios acadêmicos da FIAP, desenvolvidos da concepção à apresentação final.",

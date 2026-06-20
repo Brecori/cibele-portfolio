@@ -1,4 +1,5 @@
 export const gallerysConstants = {
+  id: "gallerys",
   title: "Trabalhos em diferentes formatos e canais",
   gallerysList: [
     {

@@ -1,5 +1,7 @@
 import { theme } from "@/styles/theme";
+import { ResponsiveImage } from "@/components/responsive-image";
 import styled from "styled-components";
+import { mediaMaxDesktop1024 } from "@/lib/media-query";
 
 export const Footer = styled.footer`
   display: grid;
@@ -18,6 +20,10 @@ export const Copyright = styled.p`
   font-weight: 400;
   color: ${theme.white};
   text-align: center;
+
+  ${mediaMaxDesktop1024`
+    font-size: 1.4rem;
+  `}
 `;
 
 export const SocialLinks = styled.div`
@@ -35,6 +41,24 @@ export const SocialLink = styled.a`
   &:hover {
     transform: translateY(-0.3rem);
   }
+`;
+
+export const FooterLogo = styled(ResponsiveImage)`
+  width: 14.5rem;
+
+  ${mediaMaxDesktop1024`
+    width: 10rem;
+  `}
+`;
+
+export const FooterIcon = styled(ResponsiveImage)<{
+  $width: number;
+}>`
+  width: ${({ $width }) => $width / 10}rem;
+
+  ${mediaMaxDesktop1024`
+    width: ${({ $width }) => $width / 12.5}rem;
+  `}
 `;
 
 export const MadeByLink = styled.a`
