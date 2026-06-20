@@ -7,36 +7,41 @@ type MediaQuery = <Props extends object = object>(
   ...interpolations: Interpolation<Props>[]
 ) => RuleSet<Props>;
 
-type RawMediaQuery = (
-  mediaQuery: string,
-) => <Props extends object = object>(
-  styles: TemplateStringsArray,
-  ...interpolations: Interpolation<Props>[]
-) => RuleSet<Props>;
-
 const createMediaMax =
   (width: number): MediaQuery =>
   <Props extends object = object>(
     styles: TemplateStringsArray,
     ...interpolations: Interpolation<Props>[]
-  ) =>
-    css`
+  ) => {
+    const styleBlock = css(
+      styles,
+      ...(interpolations as unknown as Interpolation<object>[])
+    ) as unknown as Interpolation<object>;
+
+    return css`
       @media (max-width: ${width}px) {
-        ${css<Props>(styles, ...interpolations)}
+        ${styleBlock}
       }
     ` as RuleSet<Props>;
+  };
 
-const createMediaQuery: RawMediaQuery =
-  (mediaQuery) =>
+const createMediaQuery =
+  (mediaQuery: string): MediaQuery =>
   <Props extends object = object>(
     styles: TemplateStringsArray,
     ...interpolations: Interpolation<Props>[]
-  ) =>
-    css`
+  ) => {
+    const styleBlock = css(
+      styles,
+      ...(interpolations as unknown as Interpolation<object>[])
+    ) as unknown as Interpolation<object>;
+
+    return css`
       @media ${mediaQuery} {
-        ${css<Props>(styles, ...interpolations)}
+        ${styleBlock}
       }
     ` as RuleSet<Props>;
+  };
 
 export const mediaMaxDesktop1024 = createMediaMax(
   viewportsBase.desktop1024.width,
