@@ -2,8 +2,9 @@ import { ProjectProps } from "../props";
 
 export const seasweep: ProjectProps = {
   slug: "seasweep",
-  image: "",
   title: "SeaSweep",
+  image: "seasweep",
+  accentColor: "earthBlue",
   subtitle: "Um oceano mais limpo começa com o SeaSweep.",
   tags: [
     "UX/UI",

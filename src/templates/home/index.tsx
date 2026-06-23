@@ -1,4 +1,4 @@
-import { Navbar } from "./navbar";
+import { HomeNavbar } from "./home-navbar";
 import { Hero } from "./hero";
 import { Certifications } from "./certifications";
 import { Experiences } from "./experiences";
@@ -19,7 +19,7 @@ const VisualExperience = dynamic(
 export const HomeTemplate: FC = () => {
   return (
     <>
-      <Navbar />
+      <HomeNavbar />
       <Hero />
       <Experiences />
       <VisualExperience />

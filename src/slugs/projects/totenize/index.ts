@@ -2,10 +2,11 @@ import { ProjectProps } from "../props";
 
 export const totenize: ProjectProps = {
   slug: "totenize",
-  image: "",
   title: "Totenize",
   subtitle: "Modernize, automatize, Totenize!",
   tags: ["UX/UI", "Acessibilidade", "Prototipação", "Branding", "Startup"],
+  image: "totenize",
+  accentColor: "kingfisherDaisy",
   description:
     "A Totenize é uma solução de atendimento baseada em robôs totens interativos, criada para tornar a experiência do cliente mais acessível, ágil e inteligente.\nO projeto oferece suporte em Libras, automação de pedidos e pagamentos, além de coleta de dados para melhorar a jornada do usuário e apoiar decisões do negócio.",
   prototype: "Ver protótipo no Figma",

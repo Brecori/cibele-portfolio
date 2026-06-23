@@ -1,6 +1,6 @@
 import AnimatedContent from "@/components/animated-content";
 import { SectionTitle } from "@/components/section-title";
-import { mediaMaxDesktop1024 } from "@/lib/media-query";
+import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
 import { theme } from "@/styles/theme";
 import styled from "styled-components";
 
@@ -29,6 +29,10 @@ export const GallerysGrid = styled(AnimatedContent)`
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 3.6rem;
   `}
+
+  ${mediaMaxMobile`
+    gap: 2.4rem;
+  `}
 `;
 
 export const GalleryCard = styled.a<{ $backgroundImg: string }>`
@@ -42,9 +46,7 @@ export const GalleryCard = styled.a<{ $backgroundImg: string }>`
   overflow: hidden;
   text-decoration: none;
   background-color: ${theme.zenGray};
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 
   &::before {
     content: "";
@@ -73,6 +75,11 @@ export const GalleryCard = styled.a<{ $backgroundImg: string }>`
     &:hover {
       transform: translateY(0);
     }
+  `}
+
+  ${mediaMaxMobile`
+    aspect-ratio: 1 / 1;
+    padding: 1.6rem;
   `}
 `;
 

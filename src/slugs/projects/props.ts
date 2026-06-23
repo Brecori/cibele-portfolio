@@ -1,6 +1,9 @@
+import { ColorFamily } from "@/styles/theme";
+
 export interface ProjectProps {
   slug: string;
-  image: string;
+  image?: string;
+  accentColor: ColorFamily;
   title: string;
   subtitle: string;
   tags: string[];

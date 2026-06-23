@@ -2,8 +2,9 @@ import { ProjectProps } from "../props";
 
 export const medvision360: ProjectProps = {
   slug: "medvision-360",
-  image: "",
   title: "MedVision 360",
+  image: "medvision-360",
+  accentColor: "uniformBlue",
   subtitle: "Conectando saber e saúde em 360 graus.",
   tags: ["UX/UI", "HealthTech", "Prototipação", "Educação", "Acessibilidade"],
   description:

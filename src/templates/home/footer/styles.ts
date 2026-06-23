@@ -1,7 +1,7 @@
 import { theme } from "@/styles/theme";
 import { ResponsiveImage } from "@/components/responsive-image";
 import styled from "styled-components";
-import { mediaMaxDesktop1024 } from "@/lib/media-query";
+import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
 
 export const Footer = styled.footer`
   display: grid;
@@ -12,6 +12,14 @@ export const Footer = styled.footer`
   margin-top: 10rem;
   padding-inline: var(--default-padding);
   background-color: ${theme.darkBlack};
+
+  ${mediaMaxMobile`
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 3.2rem;
+    min-height: auto;
+    padding-block: 4.8rem;
+  `}
 `;
 
 export const Copyright = styled.p`
@@ -24,12 +32,21 @@ export const Copyright = styled.p`
   ${mediaMaxDesktop1024`
     font-size: 1.4rem;
   `}
+
+  ${mediaMaxMobile`
+    max-width: 32rem;
+    font-size: 1.8rem;
+  `}
 `;
 
 export const SocialLinks = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+
+  ${mediaMaxMobile`
+    gap: 3.2rem;
+  `}
 `;
 
 export const SocialLink = styled.a`
@@ -41,6 +58,12 @@ export const SocialLink = styled.a`
   &:hover {
     transform: translateY(-0.3rem);
   }
+
+  ${mediaMaxMobile`
+    &:hover {
+      transform: none;
+    }
+  `}
 `;
 
 export const FooterLogo = styled(ResponsiveImage)`
@@ -48,6 +71,10 @@ export const FooterLogo = styled(ResponsiveImage)`
 
   ${mediaMaxDesktop1024`
     width: 10rem;
+  `}
+
+  ${mediaMaxMobile`
+    width: 14.5rem;
   `}
 `;
 
@@ -58,6 +85,10 @@ export const FooterIcon = styled(ResponsiveImage)<{
 
   ${mediaMaxDesktop1024`
     width: ${({ $width }) => $width / 12.5}rem;
+  `}
+
+  ${mediaMaxMobile`
+    width: ${({ $width }) => $width / 10}rem;
   `}
 `;
 

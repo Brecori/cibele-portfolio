@@ -2,7 +2,7 @@ import AnimatedContent from "@/components/animated-content";
 import { ContentParagraph } from "@/components/content-paragraph";
 import { ResponsiveImage } from "@/components/responsive-image";
 import { SectionTitle } from "@/components/section-title";
-import { mediaMaxDesktop1024 } from "@/lib/media-query";
+import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
 import { theme } from "@/styles/theme";
 import styled from "styled-components";
 
@@ -126,6 +126,10 @@ export const ToolsRow = styled.div`
   gap: 8.8rem;
   justify-content: center;
   margin-top: 3.2rem;
+
+  ${mediaMaxDesktop1024`
+    gap: 4.8rem;
+  `}
 `;
 
 export const ToolsImage = styled(ResponsiveImage)`
@@ -136,4 +140,8 @@ export const ToolsImage = styled(ResponsiveImage)`
   &:hover {
     transform: translateY(-0.4rem) scale(1.05);
   }
+
+  ${mediaMaxMobile`
+  width: 5rem
+  `}
 `;

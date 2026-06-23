@@ -20,6 +20,11 @@ export const theme = {
   darkSilver: "#b1b1b1",
   darkBlack: "#020202",
   vividBlack: "#010101",
+  kingfisherDaisy: "#3D007A",
+  earthBlue: "#3274B7",
+  uniformBlue: "#0E2739",
+  bustyBlue: "#0B5988",
+  geckoGreen: "#3E7D35",
 };
 
 // get the color name in https://www.color-name.com

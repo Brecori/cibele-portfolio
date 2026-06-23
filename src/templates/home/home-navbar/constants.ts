@@ -1,4 +1,4 @@
-export const navbarConstants = {
+export const homeNavbarConstants = {
   logo: {
     src: "./svg/logo.svg",
     alt: "Logo Cibele Rodrigues",

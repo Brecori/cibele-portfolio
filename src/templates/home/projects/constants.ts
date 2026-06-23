@@ -26,7 +26,7 @@ export const projectsConstants = {
       description:
         "Óculos com câmera e plataforma ao vivo para ampliar o acesso ao ensino prático de estudantes de medicina.",
       backgroundImg: "https://dummyimage.com/600x500/878787/000000.png",
-      href: "/projects/medvision",
+      href: "/projects/medvision-360",
     },
     {
       title: "HealthUnify",

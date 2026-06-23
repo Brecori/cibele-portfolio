@@ -2,8 +2,9 @@ import { ProjectProps } from "../props";
 
 export const ecogarden: ProjectProps = {
   slug: "ecogarden",
-  image: "",
   title: "EcoGarden",
+  image: "ecogarden",
+  accentColor: "geckoGreen",
   subtitle: "Cultive, aprenda e preserve com o EcoGarden.",
   tags: [
     "UX/UI",

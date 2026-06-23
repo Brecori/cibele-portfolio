@@ -1,4 +1,5 @@
 import { projects } from "@/slugs/projects";
+import { ProjectsTemplate } from "@/templates/projects";
 import { notFound } from "next/navigation";
 
 export const dynamicParams = false;
@@ -26,5 +27,5 @@ export default async function ProjectPage({
     notFound();
   }
 
-  return <div>{project.title}</div>;
+  return <ProjectsTemplate project={project} />;
 }

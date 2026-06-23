@@ -43,6 +43,7 @@ export const ProjectsGrid = styled(AnimatedContent)`
   gap: 4.8rem;
 
   > div {
+    min-width: 0;
     width: 100%;
   }
 
@@ -107,14 +108,26 @@ export const ProjectCard = styled.a<{
       box-shadow: none;
     }
   `}
+
+  ${mediaMaxMobile`
+    height: 24rem;
+    padding: 1.2rem 1.6rem;
+  `}
 `;
 
 export const ProjectContent = styled.div`
   display: flex;
   flex-direction: column;
+  min-width: 0;
+  width: 100%;
   gap: 1.2rem;
   position: relative;
+  overflow: hidden;
   z-index: 1;
+
+  ${mediaMaxMobile`
+    gap: 0.8rem;
+  `}
 `;
 
 export const ProjectTitle = styled.h3`
@@ -125,6 +138,10 @@ export const ProjectTitle = styled.h3`
 
   ${mediaMaxDesktop1024`
     font-size: 2.4rem;
+  `}
+
+  ${mediaMaxMobile`
+    font-size: 2.8rem;
   `}
 `;
 
@@ -137,9 +154,16 @@ export const ProjectSubtitle = styled.p`
   ${mediaMaxDesktop1024`
     font-size: 1.6rem;
   `}
+
+  ${mediaMaxMobile`
+    font-size: 2rem;
+  `}
 `;
 
 export const ProjectDescription = styled.p`
+  display: -webkit-box;
+  min-width: 0;
+  width: 100%;
   font-size: 2rem;
   line-height: 1.3em;
   font-weight: 400;
@@ -147,5 +171,14 @@ export const ProjectDescription = styled.p`
 
   ${mediaMaxDesktop1024`
     font-size: 1.4rem;
+  `}
+
+  ${mediaMaxMobile`
+    -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+    font-size: 1.6rem;
+  max-width: 100%;
+  overflow: hidden;
   `}
 `;

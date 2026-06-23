@@ -3,32 +3,11 @@ import styled from "styled-components";
 import { theme } from "@/styles/theme";
 import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
 
-export const Navbar = styled.nav<{
-  $isScrolled: boolean;
-  $isMenuOpen: boolean;
-}>`
-  height: ${({ $isScrolled }) => ($isScrolled ? "6.8rem" : "8.8rem")};
-  padding-inline: var(--default-padding);
+export const Content = styled.div`
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: ${theme.darkBlack};
-  border-bottom: 0.1rem solid
-    ${({ $isScrolled, $isMenuOpen }) =>
-      $isScrolled || $isMenuOpen ? theme.fadedWhite + "50" : "transparent"};
-  transition:
-    height 0.3s ease-in-out,
-    background-color 0.3s ease-in-out,
-    border-color 0.3s ease-in-out;
-  z-index: 10;
-
-  ${mediaMaxMobile`
-    height: 10rem;
-  `}
+  justify-content: space-between;
+  width: 100%;
 `;
 
 export const Logo = styled(Image)`
@@ -57,23 +36,23 @@ export const NavbarLinks = styled.ul`
 `;
 
 export const NavbarLink = styled.li`
+  position: relative;
   font-size: 1.8rem;
   font-weight: 400;
-  color: ${theme.white};
   line-height: 1.4em;
+  color: ${theme.white};
   transition:
     color 0.3s ease-in-out,
     transform 0.3s ease-in-out;
-  position: relative;
 
   &::after,
   &::before {
     content: "";
     position: absolute;
+    bottom: -0.4rem;
     width: 0;
     height: 0.1rem;
     background-color: ${theme.white};
-    bottom: -0.4rem;
     transition: width 0.25s 0.15s ease-in-out;
   }
 
@@ -115,18 +94,18 @@ export const NavbarLink = styled.li`
 `;
 
 export const Button = styled.a`
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding: 0.9rem 1.6rem;
+  border: 0.1rem solid ${theme.white};
+  border-radius: 0.8rem;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.4em;
   color: ${theme.white};
   background-color: transparent;
-  padding: 0.9rem 1.6rem;
-  border-radius: 0.8rem;
   transition: color 0.3s ease-in-out;
-  border: 0.1rem solid ${theme.white};
-  position: relative;
-  overflow: hidden;
-  isolation: isolate;
 
   span {
     position: relative;
@@ -136,14 +115,14 @@ export const Button = styled.a`
   &::before {
     content: "";
     position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
     width: 100%;
     height: 0;
     border-radius: 0.8rem;
     background-color: ${theme.white};
-    bottom: 0;
-    left: 0;
     transition: height 0.3s ease;
-    z-index: 0;
   }
 
   &:hover {

@@ -2,8 +2,9 @@ import { ProjectProps } from "../props";
 
 export const healthunify: ProjectProps = {
   slug: "healthunify",
-  image: "",
   title: "HealthUnify",
+  image: "healthunify",
+  accentColor: "bustyBlue",
   subtitle: "Seu universo de saúde em um único acesso.",
   tags: [
     "UX/UI",
