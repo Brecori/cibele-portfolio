@@ -16,6 +16,7 @@ export const ProjectsNavbar: FC<ProjectsNavbarProps> = ({ image }) => {
             alt={C.logo.alt}
             width={C.logo.width}
             height={C.logo.height}
+            loading="eager"
           />
         </S.BrandLink>
 
@@ -28,6 +29,7 @@ export const ProjectsNavbar: FC<ProjectsNavbarProps> = ({ image }) => {
                 width={200}
                 height={36}
                 $width={200}
+                loading="eager"
               />
             </a>
           )}
