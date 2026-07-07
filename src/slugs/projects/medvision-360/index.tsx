@@ -7,8 +7,15 @@ export const medvision360: ProjectProps = {
   accentColor: "uniformBlue",
   subtitle: "Conectando saber e saúde em 360 graus.",
   tags: ["UX/UI", "HealthTech", "Prototipação", "Educação", "Acessibilidade"],
-  description:
-    "MedVision é uma solução com foco em conectar plataformas digitais criadas para apoiar o ensino prático dos estudantes de enfermagem.\nA proposta une simuladores, aulas, prontuários e conteúdos práticos em uma experiência acessível e integrada, ajudando os aprendizes de forma mais visual e sensível.",
+  description: (
+    <>
+      MedVision é uma solução com óculos com câmera e plataforma digital criada
+      para apoiar o ensino prático de estudantes de medicina. <br /><br />A proposta
+      permite acompanhar aulas, procedimentos e conteúdos médicos ao vivo,
+      ampliando o acesso a experiências práticas de aprendizado de forma mais
+      visual e acessível.
+    </>
+  ),
   prototype: "Ver protótipo no Figma",
   figmaUrl: "",
   highlights: [

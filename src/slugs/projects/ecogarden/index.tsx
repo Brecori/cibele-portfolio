@@ -13,8 +13,14 @@ export const ecogarden: ProjectProps = {
     "Alimentação consciente",
     "Produto digital",
   ],
-  description:
-    "EcoGarden é uma solução criada para facilitar o cultivo de hortas em casa, conectando tecnologia, sustentabilidade e alimentação consciente.\nA proposta ajuda usuários a acompanhar a saúde e o tempo de cuidados de forma mais simples, organizada e acessível.",
+  description: (
+    <>
+      EcoGarden é uma solução criada para facilitar o cultivo de hortas em casa,
+      conectando tecnologia, sustentabilidade e alimentação consciente. <br />
+      <br />O projeto ajuda usuários a planejar, acompanhar e cuidar de hortas
+      domésticas de forma mais simples, organizada e acessível.
+    </>
+  ),
   prototype: "Ver protótipo no Figma",
   figmaUrl: "",
   highlights: [

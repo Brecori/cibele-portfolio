@@ -13,8 +13,15 @@ export const healthunify: ProjectProps = {
     "Sistema digital",
     "Organização de dados",
   ],
-  description:
-    "HealthUnify é uma solução criada para reunir o uso da saúde em um só local, centralizando prontuários, receitas e documentos em uma única interface digital.\nA proposta busca tornar o cuidado mais transparente, acessível e organizado para pacientes, hospitais e equipes profissionais em uma experiência simples.",
+  description: (
+    <>
+      HealthUnify é uma solução criada para reduzir o uso de papel em hospitais,
+      centralizando prontuários, receitas e documentos em um único sistema
+      digital. <br /> <br />A proposta busca facilitar o acesso às informações,
+      melhorar a organização dos processos hospitalares e tornar a jornada entre
+      pacientes e profissionais mais eficiente.
+    </>
+  ),
   prototype: "Ver protótipo no Figma",
   figmaUrl: "",
   highlights: [

@@ -4,6 +4,7 @@ import { FC, useState } from "react";
 import { projectAboutConstants as C } from "./constants";
 import { ProjectAboutProps } from "./props";
 import * as S from "./styles";
+import { SectionTitle } from "@/components/section-title";
 
 export const ProjectAbout: FC<ProjectAboutProps> = ({ image, description }) => {
   const [headerImage, setHeaderImage] = useState(() =>
@@ -13,7 +14,7 @@ export const ProjectAbout: FC<ProjectAboutProps> = ({ image, description }) => {
   return (
     <S.Section>
       <S.Content>
-        <S.Title>{C.title}</S.Title>
+        <SectionTitle>{C.title}</SectionTitle>
 
         <S.Description>{description}</S.Description>
       </S.Content>

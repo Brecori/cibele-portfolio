@@ -15,6 +15,7 @@ export const Section = styled.section`
   `}
 
   ${mediaMaxMobile`
+    margin-top: 16rem;
     gap: 2.4rem;
   `}
 `;
@@ -69,6 +70,15 @@ export const TagsList = styled(AnimatedContent)`
   > div {
     flex: 1;
   }
+
+  ${mediaMaxDesktop1024`
+    gap: 3.2rem;
+  `}
+
+  ${mediaMaxMobile`
+    gap: 2.4rem;
+    flex-direction: column;
+  `}
 `;
 
 export const Tag = styled.div<{ $accentColor?: ColorFamily }>`

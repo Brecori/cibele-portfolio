@@ -25,27 +25,17 @@ export const Section = styled.section`
 `;
 
 export const Content = styled(AnimatedContent)`
-  max-width: 58rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  max-width: 56rem;
 
   ${mediaMaxDesktop1024`
-    max-width: 68rem;
-  `}
-`;
-
-export const Title = styled.h2`
-  margin-bottom: 2.4rem;
-  color: ${theme.white};
-  font-size: 3.2rem;
-  line-height: 1.2em;
-  font-weight: 700;
-
-  ${mediaMaxDesktop1024`
-    font-size: 2.8rem;
+    max-width: 100%;
   `}
 
   ${mediaMaxMobile`
-    margin-bottom: 1.6rem;
-    font-size: 2.8rem;
+    gap: 1.6rem;
   `}
 `;
 
@@ -61,6 +51,7 @@ export const Description = styled.p`
 
   ${mediaMaxMobile`
     font-size: 1.8rem;
+
   `}
 `;
 

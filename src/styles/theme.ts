@@ -23,8 +23,8 @@ export const theme = {
   kingfisherDaisy: "#3D007A",
   earthBlue: "#3274B7",
   uniformBlue: "#0E2739",
-  bustyBlue: "#0B5988",
-  geckoGreen: "#3E7D35",
+  bustyBlue: "#4008E2",
+  geckoGreen: "#64A338",
 };
 
 // get the color name in https://www.color-name.com

@@ -1,4 +1,5 @@
 import { ColorFamily } from "@/styles/theme";
+import { ReactNode } from "react";
 
 export interface ProjectProps {
   slug: string;
@@ -7,7 +8,7 @@ export interface ProjectProps {
   title: string;
   subtitle: string;
   tags: string[];
-  description: string;
+  description: string | ReactNode;
   prototype: string;
   figmaUrl: string;
   highlights: { title: string; description: string }[];
