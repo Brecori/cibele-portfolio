@@ -21,7 +21,15 @@ export const ecogarden: ProjectProps = {
       domésticas de forma mais simples, organizada e acessível.
     </>
   ),
-  prototype: "Ver protótipo no Figma",
+  prototype: (
+    <>
+      A experiência visual combina estética natural, organização e tecnologia
+      para tornar o cuidado com hortas mais intuitivo e agradável. <br /> <br />
+      O protótipo reúne conteúdos, simulações e acompanhamento do cultivo em uma
+      jornada simples para quem quer começar ou manter uma horta em casa.
+    </>
+  ),
+
   figmaUrl: "",
   highlights: [
     {

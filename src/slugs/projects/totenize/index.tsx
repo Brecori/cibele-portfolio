@@ -18,7 +18,14 @@ export const totenize: ProjectProps = {
       apoiar decisões do negócio.
     </>
   ),
-  prototype: "Ver protótipo no Figma",
+  prototype: (
+    <>
+      A interface foi pensada para facilitar a navegação e tornar as principais
+      ações mais claras para diferentes perfis de usuários. <br /> <br />O
+      protótipo organiza pedidos, pagamentos e suporte em Libras em uma jornada
+      simples, acessível e funcional.
+    </>
+  ),
   figmaUrl:
     "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
   highlights: [

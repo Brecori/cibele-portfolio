@@ -9,7 +9,7 @@ export interface ProjectProps {
   subtitle: string;
   tags: string[];
   description: string | ReactNode;
-  prototype: string;
+  prototype: string | ReactNode;
   figmaUrl: string;
   highlights: { title: string; description: string }[];
   prototypeImages: { src: string; alt: string }[];

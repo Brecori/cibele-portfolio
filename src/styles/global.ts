@@ -21,7 +21,6 @@ export const GlobalStyles = createGlobalStyle`
 
 
   html, body, #__next {
-    height: 100%;
     background-color: ${theme.darkBlack};
     color: ${theme.white};
     scrollbar-color: ${theme.jagger} ${theme.darkBlack};
@@ -88,6 +87,4 @@ export const GlobalStyles = createGlobalStyle`
   :root {
     --default-padding: 20rem;
   }
-
-
 `;

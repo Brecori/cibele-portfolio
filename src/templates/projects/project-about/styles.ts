@@ -42,7 +42,7 @@ export const Content = styled(AnimatedContent)`
 export const Description = styled.p`
   color: ${theme.white};
   font-size: 2rem;
-  line-height: 1.35em;
+  line-height: 1.3em;
   font-weight: 400;
 
   ${mediaMaxDesktop1024`
@@ -65,8 +65,4 @@ export const HeaderImage = styled(ResponsiveImage)`
   aspect-ratio: 1.72 / 1;
   object-fit: cover;
   border-radius: 0.8rem;
-
-  ${mediaMaxMobile`
-    aspect-ratio: 1.4 / 1;
-  `}
 `;

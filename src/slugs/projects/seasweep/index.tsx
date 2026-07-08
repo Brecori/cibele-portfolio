@@ -17,12 +17,20 @@ export const seasweep: ProjectProps = {
     <>
       SeaSweep é uma solução voltada à preservação dos oceanos, criada para
       captar microplásticos durante rotas marítimas e possibilitar o
-      reaproveitamento desse material em novos produtos. <br /><br />O projeto conecta
-      tecnologia, sustentabilidade e parcerias com marcas para transformar
-      resíduos em valor, incentivando uma cadeia mais consciente e circular.
+      reaproveitamento desse material em novos produtos. <br />
+      <br />O projeto conecta tecnologia, sustentabilidade e parcerias com
+      marcas para transformar resíduos em valor, incentivando uma cadeia mais
+      consciente e circular.
     </>
   ),
-  prototype: "Ver protótipo no Figma",
+  prototype: (
+    <>
+      A interface foi pensada para apresentar dados de coleta, rotas marítimas,
+      volume de microplásticos captados e oportunidades de reaproveitamento.{" "}
+      <br /> <br />O protótipo organiza informações ambientais e comerciais de
+      forma visual, conectando operação, impacto e marcas parceiras.
+    </>
+  ),
   figmaUrl: "",
   highlights: [
     {

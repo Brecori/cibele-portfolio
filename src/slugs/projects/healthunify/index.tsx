@@ -22,7 +22,15 @@ export const healthunify: ProjectProps = {
       pacientes e profissionais mais eficiente.
     </>
   ),
-  prototype: "Ver protótipo no Figma",
+  prototype: (
+    <>
+      A interface foi pensada para atender diferentes perfis de uso, permitindo
+      que pacientes enviem documentos e profissionais acessem informações de
+      forma clara, rápida e centralizada. <br /> <br />O protótipo organiza
+      fluxos de envio, consulta e acompanhamento documental em uma experiência
+      simples e funcional.
+    </>
+  ),
   figmaUrl: "",
   highlights: [
     {

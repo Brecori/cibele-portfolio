@@ -10,13 +10,20 @@ export const medvision360: ProjectProps = {
   description: (
     <>
       MedVision é uma solução com óculos com câmera e plataforma digital criada
-      para apoiar o ensino prático de estudantes de medicina. <br /><br />A proposta
-      permite acompanhar aulas, procedimentos e conteúdos médicos ao vivo,
-      ampliando o acesso a experiências práticas de aprendizado de forma mais
-      visual e acessível.
+      para apoiar o ensino prático de estudantes de medicina. <br />
+      <br />A proposta permite acompanhar aulas, procedimentos e conteúdos
+      médicos ao vivo, ampliando o acesso a experiências práticas de aprendizado
+      de forma mais visual e acessível.
     </>
   ),
-  prototype: "Ver protótipo no Figma",
+  prototype: (
+    <>
+      A interface foi pensada para conectar alunos e professores em uma
+      experiência clara, visual e intuitiva. <br /> <br />O protótipo organiza
+      aulas ao vivo, gravações, conteúdos médicos e galerias em uma jornada
+      simples para acompanhar e revisar o aprendizado.
+    </>
+  ),
   figmaUrl: "",
   highlights: [
     {
