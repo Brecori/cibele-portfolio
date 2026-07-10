@@ -2,9 +2,10 @@ import { FC } from "react";
 import { ProjectTemplateProps } from "./props";
 import { ProjectsHeader } from "../shared/header";
 import { ProjectsNavbar } from "../shared/projects-navbar";
-import { ProjectAbout } from "./project-about";
-import { ProjectHighlights } from "./project-highlights";
-import { ProjectPrototype } from "./project-prototype";
+import { ProjectAbout } from "./about";
+import { ProjectHighlights } from "./highlights";
+import { ProjectPrototype } from "./prototype";
+import { ProjectPartners } from "./partners";
 
 export const ProjectsTemplate: FC<ProjectTemplateProps> = ({ project }) => {
   return (
@@ -26,6 +27,7 @@ export const ProjectsTemplate: FC<ProjectTemplateProps> = ({ project }) => {
         prototype={project.prototype}
         figmaUrl={project.figmaUrl}
       />
+      <ProjectPartners partners={project.partners} />
     </>
   );
 };

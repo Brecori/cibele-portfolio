@@ -49,8 +49,5 @@ export const ecogarden: ProjectProps = {
     },
   ],
   prototypeImages: [],
-  partners: [
-    { name: "Microsoft", logoUrl: "", altUrl: "" },
-    { name: "Kraft Heinz", logoUrl: "", altUrl: "" },
-  ],
+  partners: ["Microsoft", "Kraft Heinz", "CropLife Brasil"],
 };

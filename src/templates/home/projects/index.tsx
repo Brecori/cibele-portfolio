@@ -1,5 +1,6 @@
 import { FC } from "react";
 import AnimatedContent from "@/components/animated-content";
+import { brands } from "@/constants/project-partners";
 import { projectsConstants as C } from "./constants";
 import * as S from "./styles";
 import { SectionTitle } from "@/components/section-title";
@@ -38,7 +39,7 @@ export const Projects: FC = () => {
           {C.projectsPartnersTitle}
         </S.ProjectsPartnersTitle>
       </AnimatedContent>
-      <S.ProjectsPartnersGrid cards={C.projectsPartnersList} />
+      <S.ProjectsPartnersGrid cards={C.projectsPartners.map((name) => brands[name])} />
     </S.ProjectsSection>
   );
 };

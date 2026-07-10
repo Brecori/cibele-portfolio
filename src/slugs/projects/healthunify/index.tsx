@@ -50,5 +50,5 @@ export const healthunify: ProjectProps = {
     },
   ],
   prototypeImages: [],
-  partners: [{ name: "Azure", logoUrl: "", altUrl: "" }],
+  partners: ["Azure"],
 };

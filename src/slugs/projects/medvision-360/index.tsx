@@ -43,5 +43,5 @@ export const medvision360: ProjectProps = {
     },
   ],
   prototypeImages: [],
-  partners: [],
+  partners: ["Hapvida"],
 };

@@ -51,8 +51,10 @@ export const seasweep: ProjectProps = {
   ],
   prototypeImages: [],
   partners: [
-    { name: "AWS", logoUrl: "", altUrl: "" },
-    { name: "UNESCO", logoUrl: "", altUrl: "" },
-    { name: "Softtek", logoUrl: "", altUrl: "" },
+    "AWS",
+    "UNESCO",
+    "UN Global Compact",
+    "Softtek",
+    "Rede Oceano Limpo",
   ],
 };
