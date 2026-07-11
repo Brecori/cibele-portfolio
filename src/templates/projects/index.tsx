@@ -6,10 +6,11 @@ import { ProjectAbout } from "./about";
 import { ProjectHighlights } from "./highlights";
 import { ProjectPrototype } from "./prototype";
 import { ProjectPartners } from "./partners";
+import { Footer } from "../shared/footer";
 
 export const ProjectsTemplate: FC<ProjectTemplateProps> = ({ project }) => {
   return (
-    <>
+    <main>
       <ProjectsNavbar image={project.image} />
       <ProjectsHeader
         title={project.title}
@@ -28,6 +29,7 @@ export const ProjectsTemplate: FC<ProjectTemplateProps> = ({ project }) => {
         figmaUrl={project.figmaUrl}
       />
       <ProjectPartners partners={project.partners} />
-    </>
+      <Footer showSocialMedia={false} />
+    </main>
   );
 };

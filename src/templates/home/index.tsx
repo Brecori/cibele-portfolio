@@ -2,8 +2,8 @@ import { HomeNavbar } from "./home-navbar";
 import { Hero } from "./hero";
 import { Certifications } from "./certifications";
 import { Experiences } from "./experiences";
-import { Footer } from "./footer";
-import { Gallerys } from "./gallerys";
+import { Footer } from "../shared/footer";
+import { Galleries } from "./galleries";
 import { Projects } from "./projects";
 import { Skills } from "./skills";
 import dynamic from "next/dynamic";
@@ -18,16 +18,16 @@ const VisualExperience = dynamic(
 
 export const HomeTemplate: FC = () => {
   return (
-    <>
+    <main>
       <HomeNavbar />
       <Hero />
       <Experiences />
       <VisualExperience />
       <Projects />
       <Skills />
-      <Gallerys />
+      <Galleries />
       <Certifications />
       <Footer />
-    </>
+    </main>
   );
 };

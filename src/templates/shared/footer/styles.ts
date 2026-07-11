@@ -4,8 +4,8 @@ import styled from "styled-components";
 import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
 
 export const Footer = styled.footer`
-  display: grid;
-  grid-template-columns: max-content 1fr max-content;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 4.8rem;
   min-height: 8.8rem;
@@ -14,9 +14,8 @@ export const Footer = styled.footer`
   background-color: ${theme.darkBlack};
 
   ${mediaMaxMobile`
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 3.2rem;
+    flex-direction: column-reverse;
+    justify-content: center;
     min-height: auto;
     padding-block: 4.8rem;
   `}

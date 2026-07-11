@@ -3,7 +3,7 @@ import AnimatedContent from "@/components/animated-content";
 import { gallerysConstants as C } from "./constants";
 import * as S from "./styles";
 
-export const Gallerys: FC = () => {
+export const Galleries: FC = () => {
   return (
     <S.GallerysSection id={C.id}>
       <AnimatedContent>
