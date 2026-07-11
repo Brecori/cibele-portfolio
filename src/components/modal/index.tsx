@@ -38,16 +38,10 @@ export const Modal: FC<ModalProps> = ({ children, isOpen, onClose }) => {
 
   return (
     <S.Overlay onClick={onClose} aria-modal="true" role="dialog">
-      <S.Content onClick={handleContentClick}>
-        <S.CloseButton
-          type="button"
-          aria-label="Fechar modal"
-          onClick={onClose}
-        >
-          X
-        </S.CloseButton>
-        {children}
-      </S.Content>
+      <S.CloseButton type="button" aria-label="Fechar modal" onClick={onClose}>
+        X
+      </S.CloseButton>
+      <S.Container onClick={handleContentClick}>{children}</S.Container>
     </S.Overlay>
   );
 };
