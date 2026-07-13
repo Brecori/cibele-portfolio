@@ -135,10 +135,11 @@ export const PrototypeImage = styled(ResponsiveImage)`
 
 export const ModalImageWrapper = styled.div`
   width: 100%;
+  height: 100%;
 
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     border-radius: 0.8rem;
   }
