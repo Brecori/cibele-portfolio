@@ -24,8 +24,10 @@ export const ProjectsPartnersGrid = styled(BrandingCardGrid)<{
     ${({ $cardsCount }) => $cardsCount},
     max-content
   );
-  justify-content: space-between;
-  row-gap: 4.8rem;
+  justify-content: ${({ $cardsCount }) =>
+    $cardsCount === 5 ? "space-between" : "center"};
+
+  gap: ${({ $cardsCount }) => ($cardsCount === 5 ? "0" : "4.8rem")};
   width: 100%;
 
   ${mediaMaxMobile`

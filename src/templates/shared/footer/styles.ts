@@ -21,19 +21,37 @@ export const Footer = styled.footer`
   `}
 `;
 
-export const Copyright = styled.p`
+export const Copyright = styled.div`
   font-size: 1.6rem;
   line-height: 1.4em;
   font-weight: 400;
   color: ${theme.white};
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+
+  ${mediaMaxDesktop1024`
+    font-size: 1.4rem;
+    gap: 0.6rem;
+  `}
+
+  ${mediaMaxMobile`
+    font-size: 1.8rem;
+  `}
+`;
+
+export const CopyrightText = styled.span`
+  font-size: 1.6rem;
+  line-height: 1.4em;
+  font-weight: 400;
+  color: ${theme.white};
 
   ${mediaMaxDesktop1024`
     font-size: 1.4rem;
   `}
 
   ${mediaMaxMobile`
-    max-width: 32rem;
     font-size: 1.8rem;
   `}
 `;
@@ -114,7 +132,7 @@ export const MadeByLink = styled.a`
   &::after {
     right: 0;
     width: 0;
-    transition: width 0.3s 0.5s ease-in-out;
+    transition: width 0.3s ease-in-out;
   }
 
   &:hover {
@@ -130,6 +148,7 @@ export const MadeByLink = styled.a`
     }
 
     &::after {
+      transition-delay: 0.5s;
       width: 100%;
     }
   }

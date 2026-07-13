@@ -45,8 +45,12 @@ export const footerConstants = {
   ],
   copyright: (currentYear: number) => (
     <>
-      © {currentYear} Todos os direitos reservados. <br />
-      Feito por{" "}
+      © {currentYear} Todos os direitos reservados.
+    </>
+  ),
+  copyrightCredits: (
+    <>
+      Design por Cibele Rodrigues · Desenvolvimento por{" "}
       <S.MadeByLink
         href="https://www.brenotosi.com"
         target="_blank"

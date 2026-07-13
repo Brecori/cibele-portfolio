@@ -17,7 +17,10 @@ export const Footer: FC<FooterProps> = ({ showSocialMedia = true }) => {
         />
       </a>
 
-      <S.Copyright>{C.copyright(currentYear)}</S.Copyright>
+      <S.Copyright>
+        <S.CopyrightText>{C.copyright(currentYear)}</S.CopyrightText>
+        <S.CopyrightText>{C.copyrightCredits}</S.CopyrightText>
+      </S.Copyright>
       {showSocialMedia && (
         <S.SocialLinks>
           {C.socialLinks.map((socialLink) => (

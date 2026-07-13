@@ -1,5 +1,5 @@
-import { ResponsiveImage } from "@/components/responsive-image";
 import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
+import Image from "next/image";
 import styled, { css } from "styled-components";
 
 const imageTypeStyles = {
@@ -64,13 +64,13 @@ export const Grid = styled.div`
   `}
 `;
 
-export const GridItem = styled.div<{
+export const GridItem = styled.button<{
   $type: "1x1" | "1x2" | "2x1" | "2x2";
 }>`
   ${gridItemStyles}
 `;
 
-export const GridImage = styled(ResponsiveImage)`
+export const GridImage = styled(Image)`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -85,4 +85,16 @@ export const GridImage = styled(ResponsiveImage)`
       transform: none;
     }
   `}
+`;
+
+export const ModalImageWrapper = styled.div`
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 0.8rem;
+  }
 `;

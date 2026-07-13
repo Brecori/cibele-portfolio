@@ -139,7 +139,6 @@ export const ModalImageWrapper = styled.div`
   img {
     width: 100%;
     height: auto;
-    max-height: calc(90vh - 4.8rem);
     object-fit: contain;
     border-radius: 0.8rem;
   }
