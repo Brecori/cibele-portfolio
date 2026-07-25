@@ -39,6 +39,7 @@ export const Copyright = styled.div<{ $hasSocialLinks: boolean }>`
   `}
 
   ${mediaMaxMobile`
+  align-items: center;
     font-size: 1.8rem;
   `}
 `;
@@ -101,6 +102,7 @@ export const FooterIcon = styled(ResponsiveImage)<{
   $width: number;
 }>`
   width: ${({ $width }) => $width / 10}rem;
+  height: auto;
 
   ${mediaMaxDesktop1024`
     width: ${({ $width }) => $width / 12.5}rem;

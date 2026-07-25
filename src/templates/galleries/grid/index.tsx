@@ -21,6 +21,7 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null,
   );
+  const eagerImagesCount = images.specialGrid ? 3 : 5;
 
   if (images.imgs.length === 0) {
     return null;
@@ -38,6 +39,7 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
               key={`${image.src}-${image.alt}`}
               $type={image.type}
               $specialHeight={images.specialHeight}
+              $specialGrid={images.specialGrid}
               data-type={image.type}
               type="button"
               aria-label={image.alt}
@@ -50,6 +52,7 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
                 alt={image.alt}
                 width={imageWidthandHeight[image.type].width}
                 height={imageWidthandHeight[image.type].height}
+                loading={index < eagerImagesCount ? "eager" : "lazy"}
               />
             </S.GridItem>
           ))}

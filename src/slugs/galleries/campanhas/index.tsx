@@ -9,56 +9,82 @@ export const campanhas: GalleryProps = {
     specialHeight: true,
     specialGrid: true,
     imgs: [
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 1",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 2",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/1200x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 3",
-      type: "3x1",
-    },
-    {
-      src: "https://dummyimage.com/1200x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 4",
-      type: "2x2",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 5",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 6",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 7",
-      type: "1x2",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 8",
-      type: "1x2",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 9",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 10",
-      type: "1x1",
-    },
+      {
+        src: "/imgs/galleries/campanhas/1.webp",
+        alt: "Campanha Beer and Beef",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/campanhas/2.webp",
+        alt: "Campanha Complan Norte Shopping",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/3.webp",
+        alt: "Padrao visual de campanha",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/4.webp",
+        alt: "Campanha Outback Chocolate Thunder",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/6.webp",
+        alt: "Campanha sustentabilidade Catuaí",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/campanhas/5.webp",
+        alt: "Campanha Arraia Catuaí",
+        type: "3x1",
+      },
+
+      {
+        src: "/imgs/galleries/campanhas/7.webp",
+        alt: "Campanha Cliente Estrela",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/campanhas/8.webp",
+        alt: "Campanha Save the Date",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/9.webp",
+        alt: "Campanha Diversao Taste Lab",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/10.webp",
+        alt: "Campanha Arena Globo",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/12.webp",
+        alt: "Campanha Taste Lab Beatles Fever",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/campanhas/11.webp",
+        alt: "Campanha BistroGoro",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/13.webp",
+        alt: "Campanha harmonizacao de vinhos",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/campanhas/14.webp",
+        alt: "Campanha Cliente Hospitalar",
+        type: "3x1",
+      },
+      {
+        src: "/imgs/galleries/campanhas/15.webp",
+        alt: "Campanha pizzas em dobro",
+        type: "3x1",
+      },
     ],
   },
 };
