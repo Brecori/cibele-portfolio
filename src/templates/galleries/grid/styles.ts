@@ -75,6 +75,7 @@ export const GridImage = styled(Image)`
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
+  object-position: top;
 
   &:hover {
     transform: scale(1.03);

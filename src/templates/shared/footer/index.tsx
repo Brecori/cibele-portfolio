@@ -17,7 +17,7 @@ export const Footer: FC<FooterProps> = ({ showSocialMedia = true }) => {
         />
       </a>
 
-      <S.Copyright>
+      <S.Copyright $hasSocialLinks={showSocialMedia}>
         <S.CopyrightText>{C.copyright(currentYear)}</S.CopyrightText>
         <S.CopyrightText>{C.copyrightCredits}</S.CopyrightText>
       </S.Copyright>

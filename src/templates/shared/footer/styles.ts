@@ -21,7 +21,7 @@ export const Footer = styled.footer`
   `}
 `;
 
-export const Copyright = styled.div`
+export const Copyright = styled.div<{ $hasSocialLinks: boolean }>`
   font-size: 1.6rem;
   line-height: 1.4em;
   font-weight: 400;
@@ -29,6 +29,8 @@ export const Copyright = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;
+  align-items: ${({ $hasSocialLinks }) =>
+    $hasSocialLinks ? "center" : "flex-end"};
   gap: 0.8rem;
 
   ${mediaMaxDesktop1024`

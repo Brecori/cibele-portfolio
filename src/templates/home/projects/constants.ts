@@ -11,7 +11,7 @@ export const projectsConstants = {
       subtitle: "Top 10 - Startup One FIAP",
       description:
         "Robôs totens interativos criados para tornar o atendimento mais acessível, automatizado e inteligente, com suporte em Libras, pedidos, pagamentos e coleta de dados para melhorar a experiência do cliente.",
-      backgroundImg: "https://dummyimage.com/1500x500/878787/000000.png",
+      backgroundImg: "/imgs/projects/totenize/header-section.webp",
       href: "/projects/totenize",
     },
     {
@@ -19,7 +19,7 @@ export const projectsConstants = {
       subtitle: "1º lugar - Global Solution: Blue Future",
       description:
         "Ímã sob navios cargueiros para captar microplásticos e reaproveitá-los em produtos com marcas parceiras.",
-      backgroundImg: "https://dummyimage.com/600x500/878787/000000.png",
+      backgroundImg: "/imgs/projects/seasweep/header.webp",
       href: "/projects/seasweep",
     },
     {
@@ -27,7 +27,7 @@ export const projectsConstants = {
       subtitle: "1º lugar - Global Solution: Tech Care 4 All",
       description:
         "Óculos com câmera e plataforma ao vivo para ampliar o acesso ao ensino prático de estudantes de medicina.",
-      backgroundImg: "https://dummyimage.com/600x500/878787/000000.png",
+      backgroundImg: "/imgs/projects/medvision-360/header.webp",
       href: "/projects/medvision-360",
     },
     {
@@ -35,7 +35,7 @@ export const projectsConstants = {
       subtitle: "1º lugar - Enterprise Challenge FIAP",
       description:
         "Sistema digital para unificar prontuários, receitas e documentos hospitalares, reduzindo o uso de papel.",
-      backgroundImg: "https://dummyimage.com/600x500/878787/000000.png",
+      backgroundImg: "/imgs/projects/healthunify/header.webp",
       href: "/projects/healthunify",
     },
     {
@@ -43,7 +43,7 @@ export const projectsConstants = {
       subtitle: "1º lugar - Global Solution: AI Feeding the Future",
       description:
         "Sistema para cultivo de hortas em casa, unindo tecnologia, sustentabilidade e alimentação consciente.",
-      backgroundImg: "https://dummyimage.com/600x500/878787/000000.png",
+      backgroundImg: "/imgs/projects/ecogarden/header.webp",
       href: "/projects/ecogarden",
     },
   ],

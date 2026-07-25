@@ -9,22 +9,17 @@ export const medvision360: ProjectProps = {
   tags: ["UX/UI", "HealthTech", "Prototipação", "Educação", "Acessibilidade"],
   description: (
     <>
-      MedVision é uma solução com óculos com câmera e plataforma digital criada
-      para apoiar o ensino prático de estudantes de medicina. <br />
-      <br />A proposta permite acompanhar aulas, procedimentos e conteúdos
-      médicos ao vivo, ampliando o acesso a experiências práticas de aprendizado
-      de forma mais visual e acessível.
+      O MedVision 360 é um projeto de conscientização e educação em saúde,
+      criado para apresentar conteúdos preventivos de maneira acessível,
+      envolvente e informativa. A proposta utiliza tecnologia e recursos visuais
+      para aproximar o público de temas importantes relacionados aos cuidados
+      com a saúde. <br /> <br />A experiência facilita o aprendizado e a
+      consulta das informações por meio de uma navegação simples e uma
+      organização visual objetiva. O protótipo transforma conteúdos complexos em
+      uma jornada mais clara, interativa e fácil de compreender.
     </>
   ),
-  prototype: (
-    <>
-      A interface foi pensada para conectar alunos e professores em uma
-      experiência clara, visual e intuitiva. <br /> <br />O protótipo organiza
-      aulas ao vivo, gravações, conteúdos médicos e galerias em uma jornada
-      simples para acompanhar e revisar o aprendizado.
-    </>
-  ),
-  figmaUrl: "",
+  figmaUrl: "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
   highlights: [
     {
       title: "Transmissão",
@@ -42,6 +37,5 @@ export const medvision360: ProjectProps = {
         "Conteúdo reunido em um só ambiente, com navegação simples e inclusiva.",
     },
   ],
-  prototypeImages: [],
   partners: ["Hapvida"],
 };

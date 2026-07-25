@@ -20,17 +20,7 @@ export const footerConstants = {
         height: 22,
       },
     },
-    {
-      key: 2,
-      label: "Behance",
-      href: "https://www.behance.net/cibelerodriguesl",
-      icon: {
-        src: "/svg/footer/behance.svg",
-        alt: "Ícone do Behance",
-        width: 34,
-        height: 22,
-      },
-    },
+
     {
       key: 3,
       label: "Email",
@@ -44,9 +34,7 @@ export const footerConstants = {
     },
   ],
   copyright: (currentYear: number) => (
-    <>
-      © {currentYear} Todos os direitos reservados.
-    </>
+    <>© {currentYear} Todos os direitos reservados.</>
   ),
   copyrightCredits: (
     <>

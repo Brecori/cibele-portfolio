@@ -9,21 +9,15 @@ export const totenize: ProjectProps = {
   accentColor: "kingfisherDaisy",
   description: (
     <>
-      A Totenize é uma solução de atendimento baseada em robôs totens
-      interativos, criada para tornar a experiência do cliente mais acessível,
-      ágil e inteligente.
-      <br />
-      <br />O projeto oferece suporte em Libras, automação de pedidos e
-      pagamentos, além de coleta de dados para melhorar a jornada do usuário e
-      apoiar decisões do negócio.
-    </>
-  ),
-  prototype: (
-    <>
-      A interface foi pensada para facilitar a navegação e tornar as principais
-      ações mais claras para diferentes perfis de usuários. <br /> <br />O
-      protótipo organiza pedidos, pagamentos e suporte em Libras em uma jornada
-      simples, acessível e funcional.
+      A Totenize é uma solução de atendimento baseada em totens interativos,
+      criada para tornar a experiência do cliente mais acessível, ágil e
+      inteligente em diferentes situações de atendimento. O projeto oferece
+      suporte em Libras, automação de pedidos e pagamentos, além da coleta de
+      dados para melhorar a jornada do usuário, reduzir etapas manuais,
+      proporcionar mais autonomia durante o uso e apoiar decisões estratégicas
+      do negócio. <br /> <br /> A experiência foi estruturada para simplificar
+      todas as etapas do atendimento, com navegação intuitiva, informações
+      claras e recursos acessíveis para diferentes perfis de usuários.
     </>
   ),
   figmaUrl:
@@ -44,5 +38,4 @@ export const totenize: ProjectProps = {
         "Coleta de informações para melhorar a jornada e apoiar decisões.",
     },
   ],
-  prototypeImages: [],
 };

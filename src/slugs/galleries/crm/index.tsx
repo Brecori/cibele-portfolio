@@ -5,56 +5,126 @@ export const crm: GalleryProps = {
   title: "CRM",
   subtitle: "E-mails promocionais e de relacionamento.",
   tags: ["E-mail", "CRM", "Promoção", "Varejo", "Digital"],
-    images: [
+  images: [
     {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 1",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 2",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/1200x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 3",
-      type: "2x1",
-    },
-    {
-      src: "https://dummyimage.com/1200x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 4",
-      type: "2x2",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 5",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 6",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 7",
+      src: "/imgs/galleries/crm/1.gif",
+      alt: "Peca de CRM 1",
       type: "1x2",
     },
     {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 8",
+      src: "/imgs/galleries/crm/2.webp",
+      alt: "Peca de CRM 2",
       type: "1x2",
     },
     {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 9",
-      type: "1x1",
+      src: "/imgs/galleries/crm/3.webp",
+      alt: "Peca de CRM 3",
+      type: "1x2",
     },
     {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 10",
-      type: "1x1",
+      src: "/imgs/galleries/crm/4.gif",
+      alt: "Peca de CRM 4",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/5.gif",
+      alt: "Peca de CRM 5",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/6.gif",
+      alt: "Peca de CRM 6",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/7.webp",
+      alt: "Peca de CRM 7",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/8.gif",
+      alt: "Peca de CRM 8",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/9.gif",
+      alt: "Peca de CRM 9",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/10.webp",
+      alt: "Peca de CRM 10",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/11.gif",
+      alt: "Peca de CRM 11",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/12.gif",
+      alt: "Peca de CRM 12",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/13.gif",
+      alt: "Peca de CRM 13",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/14.webp",
+      alt: "Peca de CRM 14",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/15.gif",
+      alt: "Peca de CRM 15",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/16.gif",
+      alt: "Peca de CRM 16",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/17.webp",
+      alt: "Peca de CRM 17",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/18.webp",
+      alt: "Peca de CRM 18",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/19.webp",
+      alt: "Peca de CRM 19",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/20.webp",
+      alt: "Peca de CRM 20",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/21.webp",
+      alt: "Peca de CRM 21",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/22.webp",
+      alt: "Peca de CRM 22",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/23.gif",
+      alt: "Peca de CRM 23",
+      type: "1x2",
+    },
+    {
+      src: "/imgs/galleries/crm/24.webp",
+      alt: "Peca de CRM 24",
+      type: "1x2",
     },
   ],
 };

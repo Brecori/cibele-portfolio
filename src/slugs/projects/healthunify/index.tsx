@@ -15,23 +15,17 @@ export const healthunify: ProjectProps = {
   ],
   description: (
     <>
-      HealthUnify é uma solução criada para reduzir o uso de papel em hospitais,
-      centralizando prontuários, receitas e documentos em um único sistema
-      digital. <br /> <br />A proposta busca facilitar o acesso às informações,
-      melhorar a organização dos processos hospitalares e tornar a jornada entre
-      pacientes e profissionais mais eficiente.
+      O HealthUnify é uma plataforma criada para reunir informações e serviços
+      de saúde em um único ambiente. A solução facilita o acesso dos usuários,
+      centraliza conteúdos importantes e torna o acompanhamento das necessidades
+      de saúde mais prático e organizado. <br /> <br />
+      Os fluxos foram planejados para proporcionar uma experiência direta,
+      intuitiva e acessível. A interface prioriza a clareza das informações e a
+      facilidade de navegação, permitindo que o usuário encontre os recursos
+      necessários com mais rapidez, autonomia e segurança.
     </>
   ),
-  prototype: (
-    <>
-      A interface foi pensada para atender diferentes perfis de uso, permitindo
-      que pacientes enviem documentos e profissionais acessem informações de
-      forma clara, rápida e centralizada. <br /> <br />O protótipo organiza
-      fluxos de envio, consulta e acompanhamento documental em uma experiência
-      simples e funcional.
-    </>
-  ),
-  figmaUrl: "",
+  figmaUrl: "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
   highlights: [
     {
       title: "Digitalização",
@@ -49,6 +43,5 @@ export const healthunify: ProjectProps = {
         "Redução do uso de papel em rotinas administrativas e de atendimento.",
     },
   ],
-  prototypeImages: [],
   partners: ["Azure"],
 };

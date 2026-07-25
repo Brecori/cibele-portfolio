@@ -15,22 +15,18 @@ export const ecogarden: ProjectProps = {
   ],
   description: (
     <>
-      EcoGarden é uma solução criada para facilitar o cultivo de hortas em casa,
-      conectando tecnologia, sustentabilidade e alimentação consciente. <br />
-      <br />O projeto ajuda usuários a planejar, acompanhar e cuidar de hortas
-      domésticas de forma mais simples, organizada e acessível.
+      O EcoGarden é uma plataforma voltada ao cultivo, à educação ambiental e à
+      adoção de hábitos mais sustentáveis. O projeto incentiva o aprendizado
+      sobre plantio, cuidados com o meio ambiente e preservação, aproximando as
+      pessoas de práticas sustentáveis no cotidiano. <br /> <br />A experiência
+      organiza orientações e conteúdos educativos em uma jornada visual simples
+      e acolhedora. O protótipo acompanha o usuário durante as etapas de
+      cultivo, facilita o acesso às informações e estimula uma relação mais
+      consciente com a natureza.
     </>
   ),
-  prototype: (
-    <>
-      A experiência visual combina estética natural, organização e tecnologia
-      para tornar o cuidado com hortas mais intuitivo e agradável. <br /> <br />
-      O protótipo reúne conteúdos, simulações e acompanhamento do cultivo em uma
-      jornada simples para quem quer começar ou manter uma horta em casa.
-    </>
-  ),
-
-  figmaUrl: "",
+  figmaUrl:
+    "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
   highlights: [
     {
       title: "Cultivo",
@@ -48,6 +44,5 @@ export const ecogarden: ProjectProps = {
         "Incentivo à alimentação mais saudável e a uma rotina sustentável.",
     },
   ],
-  prototypeImages: [],
   partners: ["Microsoft", "Kraft Heinz", "CropLife Brasil"],
 };

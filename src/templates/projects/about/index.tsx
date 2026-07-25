@@ -6,7 +6,12 @@ import { ProjectAboutProps } from "./props";
 import * as S from "./styles";
 import { SectionTitle } from "@/components/section-title";
 
-export const ProjectAbout: FC<ProjectAboutProps> = ({ image, description }) => {
+export const ProjectAbout: FC<ProjectAboutProps> = ({
+  image,
+  accentColor,
+  description,
+  figmaUrl,
+}) => {
   const [headerImage, setHeaderImage] = useState(() =>
     image ? C.headerImage(image) : C.headerImagePlaceholder,
   );
@@ -17,6 +22,17 @@ export const ProjectAbout: FC<ProjectAboutProps> = ({ image, description }) => {
         <SectionTitle>{C.title}</SectionTitle>
 
         <S.Description>{description}</S.Description>
+
+        {figmaUrl && (
+          <S.Button
+            href={figmaUrl}
+            target="_blank"
+            rel="noreferrer"
+            $accentColor={accentColor}
+          >
+            {C.figmaButtonLabel}
+          </S.Button>
+        )}
       </S.Content>
 
       <S.ImageWrapper>
@@ -24,7 +40,7 @@ export const ProjectAbout: FC<ProjectAboutProps> = ({ image, description }) => {
           src={headerImage}
           alt={C.headerImageAlt}
           width={550}
-          height={344}
+          height={432}
           loading="eager"
           onError={() => {
             if (headerImage !== C.headerImagePlaceholder) {
