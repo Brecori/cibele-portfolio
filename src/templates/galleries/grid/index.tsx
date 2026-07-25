@@ -7,13 +7,14 @@ import * as S from "./styles";
 import Image from "next/image";
 
 const imageWidthandHeight: Record<
-  GalleryGridProps["images"][number]["type"],
+  GalleryGridProps["images"]["imgs"][number]["type"],
   { width: number; height: number }
 > = {
   "1x1": { width: 260, height: 260 },
   "2x1": { width: 520, height: 260 },
   "1x2": { width: 260, height: 520 },
   "2x2": { width: 520, height: 520 },
+  "3x1": { width: 780, height: 260 },
 };
 
 export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
@@ -21,18 +22,22 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
     null,
   );
 
-  if (images.length === 0) {
+  if (images.imgs.length === 0) {
     return null;
   }
 
   return (
     <>
       <S.Section>
-        <S.Grid>
-          {images.map((image, index) => (
+        <S.Grid
+          $specialGrid={images.specialGrid}
+          $specialHeight={images.specialHeight}
+        >
+          {images.imgs.map((image, index) => (
             <S.GridItem
               key={`${image.src}-${image.alt}`}
               $type={image.type}
+              $specialHeight={images.specialHeight}
               data-type={image.type}
               type="button"
               aria-label={image.alt}
@@ -59,11 +64,13 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
         {selectedImageIndex !== null && (
           <S.ModalImageWrapper>
             <Image
-              src={images[selectedImageIndex].src}
-              alt={images[selectedImageIndex].alt}
-              width={imageWidthandHeight[images[selectedImageIndex].type].width}
+              src={images.imgs[selectedImageIndex].src}
+              alt={images.imgs[selectedImageIndex].alt}
+              width={
+                imageWidthandHeight[images.imgs[selectedImageIndex].type].width
+              }
               height={
-                imageWidthandHeight[images[selectedImageIndex].type].height
+                imageWidthandHeight[images.imgs[selectedImageIndex].type].height
               }
             />
           </S.ModalImageWrapper>

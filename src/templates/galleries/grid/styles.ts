@@ -1,4 +1,5 @@
 import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
+import { GalleryImageType } from "@/slugs/galleries/props";
 import Image from "next/image";
 import styled, { css } from "styled-components";
 
@@ -19,6 +20,10 @@ const imageTypeStyles = {
     grid-column: span 2;
     grid-row: span 2;
   `,
+  "3x1": css`
+    grid-column: span 3;
+    grid-row: span 1;
+  `,
 };
 
 export const Section = styled.section`
@@ -31,26 +36,38 @@ export const Section = styled.section`
 `;
 
 const gridItemStyles = css<{
-  $type: "1x1" | "1x2" | "2x1" | "2x2";
+  $type: GalleryImageType;
+  $specialHeight?: boolean;
 }>`
   position: relative;
   overflow: hidden;
   border-radius: 0.8rem;
   ${({ $type }) => imageTypeStyles[$type]}
 
+
   ${mediaMaxMobile`
     &[data-type="2x1"],
-    &[data-type="2x2"] {
+    &[data-type="2x2"],
+    &[data-type="3x1"] {
       grid-column: span 2;
     }
   `}
 `;
 
-export const Grid = styled.div`
+export const Grid = styled.div<{
+  $specialGrid?: boolean;
+  $specialHeight?: boolean;
+}>`
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 4.8rem;
-  grid-auto-rows: 34rem;
+  gap: 4rem;
+  grid-auto-rows: ${({ $specialHeight }) =>
+    $specialHeight ? "46rem" : "34rem"};
+  ${({ $specialGrid, $specialHeight }) =>
+    $specialGrid &&
+    css`
+      grid-template-rows: repeat(5, ${$specialHeight ? "46rem" : "34rem"});
+    `}
 
   ${mediaMaxDesktop1024`
     gap: 3.2rem;
@@ -65,7 +82,8 @@ export const Grid = styled.div`
 `;
 
 export const GridItem = styled.button<{
-  $type: "1x1" | "1x2" | "2x1" | "2x2";
+  $type: GalleryImageType;
+  $specialHeight?: boolean;
 }>`
   ${gridItemStyles}
 `;

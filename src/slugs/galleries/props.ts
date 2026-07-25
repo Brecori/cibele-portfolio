@@ -1,4 +1,4 @@
-export type GalleryImageType = "1x1" | "1x2" | "2x1" | "2x2";
+export type GalleryImageType = "1x1" | "1x2" | "2x1" | "2x2" | "3x1";
 
 export interface GalleryImage {
   src: string;
@@ -11,5 +11,9 @@ export interface GalleryProps {
   title: string;
   subtitle: string;
   tags: string[];
-  images: GalleryImage[];
+  images: {
+    imgs: GalleryImage[];
+    specialHeight?: boolean;
+    specialGrid?: boolean;
+  };
 }

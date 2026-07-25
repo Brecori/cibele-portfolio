@@ -5,7 +5,8 @@ export const cea: GalleryProps = {
   title: "C&A",
   subtitle: "Key visuals e desdobramentos para mídia, e-commerce e CRM.",
   tags: ["Key Visual", "Mídia", "E-commerce", "CRM", "Varejo"],
-  images: [
+  images: {
+    imgs: [
     {
       src: "/imgs/galleries/cea/1.webp",
       alt: "Key visual C&A Stranger Things",
@@ -201,5 +202,6 @@ export const cea: GalleryProps = {
       alt: "Campanha C&A Pay",
       type: "1x1",
     },
-  ],
+    ],
+  },
 };

@@ -5,56 +5,109 @@ export const redesSociais: GalleryProps = {
   title: "Redes Sociais",
   subtitle: "Conteúdo visual para marcas e campanhas digitais.",
   tags: ["Social Media", "Conteúdo", "Campanhas", "Branding", "Digital"],
-  images: [
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 1",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 2",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/1200x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 3",
-      type: "2x1",
-    },
-    {
-      src: "https://dummyimage.com/1200x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 4",
-      type: "2x2",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 5",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x600/878787/000000.png",
-      alt: "Placeholder da galeria C&A 6",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 7",
-      type: "1x2",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 8",
-      type: "1x2",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 9",
-      type: "1x1",
-    },
-    {
-      src: "https://dummyimage.com/600x1200/878787/000000.png",
-      alt: "Placeholder da galeria C&A 10",
-      type: "1x1",
-    },
-  ],
+  images: {
+    specialHeight: true,
+    imgs: [
+      {
+        src: "/imgs/galleries/redes-sociais/1.webp",
+        alt: "Post de estilos para redes sociais",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/2.webp",
+        alt: "Post O Diabo Veste Prada para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/3.webp",
+        alt: "Post Swarovski para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/4.webp",
+        alt: "Post Instax para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/5.webp",
+        alt: "Post Cinemark para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/6.webp",
+        alt: "Post Invasao Alien para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/7.webp",
+        alt: "Post Janeiro Branco para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/10.webp",
+        alt: "Post Capitao America para redes sociais",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/8.webp",
+        alt: "Post Cinema para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/9.webp",
+        alt: "Post Tartarugas Ninja para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/11.webp",
+        alt: "Post Xdome para redes sociais",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/12.webp",
+        alt: "Post Brazil Core para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/13.webp",
+        alt: "Post culinaria peruana para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/14.webp",
+        alt: "Post campanha de Dia das Maes para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/15.webp",
+        alt: "Post O Boticario para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/16.webp",
+        alt: "Post app Catuaí para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/17.webp",
+        alt: "Post botoes redondos para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/20.webp",
+        alt: "Post Arena Globo para redes sociais",
+        type: "2x2",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/18.webp",
+        alt: "Post Renner para redes sociais",
+        type: "1x1",
+      },
+      {
+        src: "/imgs/galleries/redes-sociais/19.webp",
+        alt: "Post Empodera Ela para redes sociais",
+        type: "1x1",
+      },
+    ],
+  },
 };

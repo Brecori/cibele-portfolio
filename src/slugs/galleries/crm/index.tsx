@@ -5,7 +5,8 @@ export const crm: GalleryProps = {
   title: "CRM",
   subtitle: "E-mails promocionais e de relacionamento.",
   tags: ["E-mail", "CRM", "Promoção", "Varejo", "Digital"],
-  images: [
+  images: {
+    imgs: [
     {
       src: "/imgs/galleries/crm/1.gif",
       alt: "Peca de CRM 1",
@@ -126,5 +127,6 @@ export const crm: GalleryProps = {
       alt: "Peca de CRM 24",
       type: "1x2",
     },
-  ],
+    ],
+  },
 };

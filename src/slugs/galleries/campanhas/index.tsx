@@ -5,7 +5,10 @@ export const campanhas: GalleryProps = {
   title: "Campanhas",
   subtitle: "Key visuals, banners e desdobramentos para canais on e off.",
   tags: ["Key Visual", "Mídia On", "Mídia Off", "Banners", "Desdobramentos"],
-  images: [
+  images: {
+    specialHeight: true,
+    specialGrid: true,
+    imgs: [
     {
       src: "https://dummyimage.com/600x600/878787/000000.png",
       alt: "Placeholder da galeria C&A 1",
@@ -19,7 +22,7 @@ export const campanhas: GalleryProps = {
     {
       src: "https://dummyimage.com/1200x600/878787/000000.png",
       alt: "Placeholder da galeria C&A 3",
-      type: "2x1",
+      type: "3x1",
     },
     {
       src: "https://dummyimage.com/1200x1200/878787/000000.png",
@@ -56,5 +59,6 @@ export const campanhas: GalleryProps = {
       alt: "Placeholder da galeria C&A 10",
       type: "1x1",
     },
-  ],
+    ],
+  },
 };
