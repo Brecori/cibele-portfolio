@@ -128,6 +128,10 @@ export const GridItem = styled.button<{
   $specialGrid?: boolean;
 }>`
   ${gridItemStyles}
+
+  img {
+    object-position: ${({ $type }) => ($type === "1x2" ? "top" : "center")};
+  }
 `;
 
 export const GridImage = styled(Image)`
@@ -137,7 +141,6 @@ export const GridImage = styled(Image)`
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
-  object-position: top;
 
   &:hover {
     transform: scale(1.03);

@@ -6,6 +6,12 @@ import { GalleryGridProps } from "./props";
 import * as S from "./styles";
 import Image from "next/image";
 
+const isGif = (src: string) => {
+  const filePath = src.split(/[?#]/)[0];
+
+  return filePath.toLowerCase().endsWith(".gif");
+};
+
 export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null,
@@ -42,6 +48,7 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
                 width={image.width}
                 height={image.height}
                 loading={index < eagerImagesCount ? "eager" : "lazy"}
+                unoptimized={isGif(image.src)}
               />
             </S.GridItem>
           ))}

@@ -17,8 +17,8 @@ export const BrandingCard: FC<BrandingCardProps> = ({
         $width={width}
         width={width}
         height={height}
+        quality={100}
         loading="lazy"
-        unoptimized
       />
     </S.BrandingCard>
   );

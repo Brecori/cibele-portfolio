@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, MouseEvent, useEffect, useRef } from "react";
+import { FC, useEffect, useRef } from "react";
 import { ModalProps } from "./props";
 import * as S from "./styles";
 import { useGSAP } from "@gsap/react";
@@ -44,16 +44,12 @@ export const Modal: FC<ModalProps> = ({ children, isOpen, onClose }) => {
     };
   }, [isOpen, onClose]);
 
-  const handleContentClick = (event: MouseEvent<HTMLDivElement>) => {
-    event.stopPropagation();
-  };
-
   return (
     <S.Overlay onClick={onClose} aria-modal="true" role="dialog" ref={modalRef}>
       <S.CloseButton type="button" aria-label="Fechar modal" onClick={onClose}>
         X
       </S.CloseButton>
-      <S.Container onClick={handleContentClick}>{children}</S.Container>
+      <S.Container>{children}</S.Container>
     </S.Overlay>
   );
 };

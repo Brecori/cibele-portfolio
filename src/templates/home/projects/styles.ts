@@ -74,7 +74,6 @@ export const ProjectCard = styled.a<{
   border-radius: 0.8rem;
   overflow: hidden;
   text-decoration: none;
-  background-color: ${theme.zenGray};
   transition:
     transform 0.35s ease,
     box-shadow 0.35s ease;

@@ -100,7 +100,6 @@ export const ImageWrapper = styled(AnimatedContent)`
 
 export const HeaderImage = styled(Image)`
   width: 100%;
-  height: 43.2rem;
-  object-fit: cover;
+  height: 47rem;
   border-radius: 0.8rem;
 `;

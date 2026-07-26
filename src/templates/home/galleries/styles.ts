@@ -45,7 +45,6 @@ export const GalleryCard = styled.a<{ $backgroundImg: string }>`
   border-radius: 0.8rem;
   overflow: hidden;
   text-decoration: none;
-  background-color: ${theme.zenGray};
   transition: transform 0.3s ease;
 
   &::before {

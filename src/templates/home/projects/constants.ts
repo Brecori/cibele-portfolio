@@ -11,7 +11,7 @@ export const projectsConstants = {
       subtitle: "Top 10 - Startup One FIAP",
       description:
         "Robôs totens interativos criados para tornar o atendimento mais acessível, automatizado e inteligente, com suporte em Libras, pedidos, pagamentos e coleta de dados para melhorar a experiência do cliente.",
-      backgroundImg: "/imgs/projects/totenize/header-section.webp",
+      backgroundImg: "/imgs/projects/totenize/header.webp",
       href: "/projects/totenize",
     },
     {
