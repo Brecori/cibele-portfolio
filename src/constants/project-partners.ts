@@ -163,7 +163,7 @@ export const brands = {
     height: 50,
   },
   FIAP: {
-    logoSrc: "/svg/partners/fiap.svg",
+    logoSrc: "/imgs/partners/fiap.png",
     logoAlt: "Logo da FIAP",
     title: "FIAP",
     width: 160,
@@ -198,7 +198,7 @@ export const brands = {
     height: 37,
   },
   CODE: {
-    logoSrc: "/svg/partners/code.svg",
+    logoSrc: "/imgs/partners/code.png",
     logoAlt: "Logo da CODE",
     title: "CODE",
     width: 51,
