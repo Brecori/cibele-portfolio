@@ -89,6 +89,7 @@ export function buildProjectMetadata(project: ProjectProps): Metadata {
       type: "article",
       locale: "pt_BR",
       url: `/projects/${project.slug}`,
+      siteName: siteTitle,
       title,
       description,
       images: [
