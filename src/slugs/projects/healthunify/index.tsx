@@ -25,7 +25,8 @@ export const healthunify: ProjectProps = {
       necessários com mais rapidez, autonomia e segurança.
     </>
   ),
-  figmaUrl: "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
+  figmaUrl:
+    "https://www.figma.com/design/dlitQz3yASzQyDYcCwPMxh/HealthUnify?node-id=148-744&p=f&t=kAfZ2AzTfO75kbUp-0",
   highlights: [
     {
       title: "Digitalização",

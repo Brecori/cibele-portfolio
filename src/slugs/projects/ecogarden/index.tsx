@@ -26,7 +26,7 @@ export const ecogarden: ProjectProps = {
     </>
   ),
   figmaUrl:
-    "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
+    "https://www.figma.com/design/d6fTosw0fsSlsIHrXEdb7I/EcoGarden?node-id=0-1&t=629KmgE1Bqk8nVzv-0",
   highlights: [
     {
       title: "Cultivo",

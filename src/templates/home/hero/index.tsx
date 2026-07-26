@@ -15,10 +15,12 @@ export const Hero: FC = () => {
         <Image
           src={C.imageSrc}
           alt={C.imageAlt}
-          fill
+          width={3051}
+          height={1356}
           priority
           fetchPriority="high"
-          sizes="100vw"
+          quality={100}
+          sizes="(max-width: 600px) 240vw, 100vw"
         />
       </S.HeroImage>
       <S.HeroTitle ref={titleRef}>{C.title}</S.HeroTitle>

@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
   },
   images: {
     remotePatterns: [new URL("https://dummyimage.com/**")],
+    qualities: [100, 75],
   },
   allowedDevOrigins: ["192.168.0.157"],
 };

@@ -33,6 +33,9 @@ export const HeroImage = styled.div`
   z-index: -1;
 
   img {
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 `;

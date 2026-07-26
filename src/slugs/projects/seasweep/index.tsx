@@ -26,7 +26,7 @@ export const seasweep: ProjectProps = {
     </>
   ),
   figmaUrl:
-    "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
+    "https://www.figma.com/design/PEZke7UbwcsHXilorXKmyO/SeaSweep?node-id=0-1&t=arv1oHgSoMGMwrae-0",
   highlights: [
     {
       title: "Captação",

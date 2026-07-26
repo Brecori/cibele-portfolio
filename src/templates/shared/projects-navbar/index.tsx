@@ -4,7 +4,10 @@ import { projectsNavbarConstants as C } from "./constants";
 import { ProjectsNavbarProps } from "./props";
 import * as S from "./styles";
 
-export const ProjectsNavbar: FC<ProjectsNavbarProps> = ({ image }) => {
+export const ProjectsNavbar: FC<ProjectsNavbarProps> = ({
+  image,
+  figmaLink,
+}) => {
   const logoUrl = image ? C.projectLogo(image) : null;
 
   return (
@@ -22,7 +25,12 @@ export const ProjectsNavbar: FC<ProjectsNavbarProps> = ({ image }) => {
 
         <S.ProjectLogoSlot>
           {logoUrl && (
-            <a href="#">
+            <a
+              href={figmaLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Abrir protótipo do projeto ${image} no Figma`}
+            >
               <S.ProjectLogo
                 src={logoUrl}
                 alt={`Logo do projeto ${image}`}

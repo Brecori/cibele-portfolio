@@ -19,7 +19,7 @@ export const medvision360: ProjectProps = {
       uma jornada mais clara, interativa e fácil de compreender.
     </>
   ),
-  figmaUrl: "https://www.figma.com/design/OcAZ563wD6rsrhKvSY4qmJ/Totenize?node-id=14-19329&p=f&t=dareKLRPUrpT9Vag-0",
+  figmaUrl: "https://www.figma.com/design/zMLHJipEueFTvvlJ5eaaDe/MedVision-360?node-id=1-2&t=Q5NAGJjqfqNmvbxm-0",
   highlights: [
     {
       title: "Transmissão",

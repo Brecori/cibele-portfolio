@@ -6,17 +6,6 @@ import { GalleryGridProps } from "./props";
 import * as S from "./styles";
 import Image from "next/image";
 
-const imageWidthandHeight: Record<
-  GalleryGridProps["images"]["imgs"][number]["type"],
-  { width: number; height: number }
-> = {
-  "1x1": { width: 260, height: 260 },
-  "2x1": { width: 520, height: 260 },
-  "1x2": { width: 260, height: 520 },
-  "2x2": { width: 520, height: 520 },
-  "3x1": { width: 780, height: 260 },
-};
-
 export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(
     null,
@@ -50,8 +39,8 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
               <S.GridImage
                 src={image.src}
                 alt={image.alt}
-                width={imageWidthandHeight[image.type].width}
-                height={imageWidthandHeight[image.type].height}
+                width={image.width}
+                height={image.height}
                 loading={index < eagerImagesCount ? "eager" : "lazy"}
               />
             </S.GridItem>
@@ -69,12 +58,8 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
             <Image
               src={images.imgs[selectedImageIndex].src}
               alt={images.imgs[selectedImageIndex].alt}
-              width={
-                imageWidthandHeight[images.imgs[selectedImageIndex].type].width
-              }
-              height={
-                imageWidthandHeight[images.imgs[selectedImageIndex].type].height
-              }
+              width={images.imgs[selectedImageIndex].width}
+              height={images.imgs[selectedImageIndex].height}
             />
           </S.ModalImageWrapper>
         )}

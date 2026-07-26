@@ -4,6 +4,8 @@ export interface GalleryImage {
   src: string;
   alt: string;
   type: GalleryImageType;
+  width: number;
+  height: number;
 }
 
 export interface GalleryProps {

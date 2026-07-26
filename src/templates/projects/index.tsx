@@ -10,7 +10,11 @@ import { Footer } from "../shared/footer";
 export const ProjectsTemplate: FC<ProjectTemplateProps> = ({ project }) => {
   return (
     <main>
-      <ProjectsNavbar image={project.image} />
+      {project.image ? (
+        <ProjectsNavbar image={project.image} figmaLink={project.figmaUrl} />
+      ) : (
+        <ProjectsNavbar />
+      )}
       <ProjectsHeader
         title={project.title}
         subtitle={project.subtitle}

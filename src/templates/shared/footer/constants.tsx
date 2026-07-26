@@ -40,7 +40,7 @@ export const footerConstants = {
     <>
       Design por Cibele Rodrigues · Desenvolvimento por{" "}
       <S.MadeByLink
-        href="https://www.brenotosi.com"
+        href="https://www.linkedin.com/in/breno-tosi-barros/"
         target="_blank"
         rel="noopener noreferrer"
       >
