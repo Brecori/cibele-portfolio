@@ -20,7 +20,7 @@ function truncate(text: string, maxLength = 125) {
     return text;
   }
 
-  return `${text.slice(0, maxLength - 1).trimEnd()}...`;
+  return `${text.slice(0, maxLength - 3).trimEnd()}...`;
 }
 
 export function extractPlainText(content: ReactNode): string {
@@ -57,6 +57,10 @@ function buildProjectDescription(project: ProjectProps) {
   );
 }
 
+function buildProjectTitle(project: ProjectProps) {
+  return `${project.title} | ${siteTitle} - Projeto de Design UX/UI`;
+}
+
 function buildGalleryDescription(gallery: GalleryProps) {
   return truncate(
     normalizeWhitespace(
@@ -66,13 +70,16 @@ function buildGalleryDescription(gallery: GalleryProps) {
 }
 
 export function buildProjectMetadata(project: ProjectProps): Metadata {
+  const title = buildProjectTitle(project);
   const description = buildProjectDescription(project);
   const image = project.image
     ? `/imgs/share/projects/${project.image}.webp`
     : defaultSocialImage;
 
   return {
-    title: project.title,
+    title: {
+      absolute: title,
+    },
     description,
     keywords: [project.title, ...project.tags, siteTitle, "portfólio", "UX/UI"],
     alternates: {
@@ -82,20 +89,20 @@ export function buildProjectMetadata(project: ProjectProps): Metadata {
       type: "article",
       locale: "pt_BR",
       url: `/projects/${project.slug}`,
-      title: `${project.title} | ${siteTitle}`,
+      title,
       description,
       images: [
         {
           url: image,
           width: 1200,
           height: 630,
-          alt: `${project.title} | ${siteTitle}`,
+          alt: title,
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${project.title} | ${siteTitle}`,
+      title,
       description,
       images: [image],
     },
