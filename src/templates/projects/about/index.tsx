@@ -41,7 +41,7 @@ export const ProjectAbout: FC<ProjectAboutProps> = ({
           alt={C.headerImageAlt}
           width={550}
           height={432}
-          loading="eager"
+          loading="lazy"
           onError={() => {
             if (headerImage !== C.headerImagePlaceholder) {
               setHeaderImage(C.headerImagePlaceholder);

@@ -6,8 +6,12 @@ export const homeNavbarConstants = {
   },
   links: [
     {
-      label: "Sobre",
+      label: "Marcas",
       href: "#experiences",
+    },
+    {
+      label: "Criações",
+      href: "#galleries",
     },
     {
       label: "Reconhecimentos",
@@ -16,10 +20,6 @@ export const homeNavbarConstants = {
     {
       label: "Habilidades",
       href: "#skills",
-    },
-    {
-      label: "Trabalhos",
-      href: "#gallerys",
     },
   ],
   contactButton: {

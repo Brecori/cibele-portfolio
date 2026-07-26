@@ -1,5 +1,5 @@
 export const gallerysConstants = {
-  id: "gallerys",
+  id: "galleries",
   title: "Trabalhos em diferentes formatos e canais",
   gallerysList: [
     {

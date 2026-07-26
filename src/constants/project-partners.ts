@@ -2,7 +2,7 @@ import { BrandingCardProps } from "@/components/branding-card/props";
 
 export const brands = {
   "C&A": {
-    logoSrc: "/svg/partners/cea.svg",
+    logoSrc: "/imgs/partners/cea.png",
     logoAlt: "Logo da C&A",
     title: "C&A",
     width: 80,

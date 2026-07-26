@@ -34,7 +34,6 @@ export const BrandingCardImage = styled(ResponsiveImage)<{
   $mobileWidth?: number;
 }>`
   width: ${({ $width }) => $width / 10}rem;
-  image-rendering: pixelated;
 
   ${mediaMaxDesktop1024`
     width: ${({ $mobileWidth, $width }) => ($mobileWidth ?? $width) / 10}rem;
