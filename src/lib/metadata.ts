@@ -9,13 +9,13 @@ import type { GalleryProps } from "@/slugs/galleries/props";
 import type { ProjectProps } from "@/slugs/projects/props";
 
 const siteTitle = "Cibele Rodrigues";
-const defaultSocialImage = "/imgs/hero/hero.png";
+const defaultSocialImage = "/imgs/share/default.webp";
 
 function normalizeWhitespace(text: string) {
   return text.replace(/\s+/g, " ").trim();
 }
 
-function truncate(text: string, maxLength = 160) {
+function truncate(text: string, maxLength = 125) {
   if (text.length <= maxLength) {
     return text;
   }
@@ -68,7 +68,7 @@ function buildGalleryDescription(gallery: GalleryProps) {
 export function buildProjectMetadata(project: ProjectProps): Metadata {
   const description = buildProjectDescription(project);
   const image = project.image
-    ? `/svg/projects/${project.image}/logo.svg`
+    ? `/imgs/share/projects/${project.image}.webp`
     : defaultSocialImage;
 
   return {
@@ -87,6 +87,8 @@ export function buildProjectMetadata(project: ProjectProps): Metadata {
       images: [
         {
           url: image,
+          width: 1200,
+          height: 630,
           alt: `${project.title} | ${siteTitle}`,
         },
       ],

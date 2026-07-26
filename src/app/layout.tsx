@@ -9,24 +9,25 @@ const lato = Lato({
   weight: ["300", "400", "700"],
 });
 
-const siteTitle = "Cibele Rodrigues";
+const siteName = "Cibele Rodrigues";
+const siteTitle = "Cibele Rodrigues | Portfólio de Design Visual e UX/UI";
 const siteDescription =
-  "Portfólio de Cibele Rodrigues, designer visual e UX/UI com foco em interfaces, experiências digitais, design systems e soluções visuais estratégicas.";
+  "Portfólio de Cibele Rodrigues, designer visual e UX/UI focada em interfaces, design systems e experiências digitais.";
 const siteUrl = "https://cibele-portfolio.vercel.app/";
 const metadataBase = new URL(siteUrl);
-const socialImage = "/imgs/hero/hero.png";
+const socialImage = "/imgs/share/default.webp";
 
 export const metadata: Metadata = {
   metadataBase,
   title: {
     default: siteTitle,
-    template: `%s | ${siteTitle}`,
+    template: `%s | ${siteName}`,
   },
   description: siteDescription,
-  applicationName: siteTitle,
-  authors: [{ name: siteTitle }],
-  creator: siteTitle,
-  publisher: siteTitle,
+  applicationName: siteName,
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
   keywords: [
     "Cibele Rodrigues",
     "portfólio",
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: "/",
-    siteName: siteTitle,
+    siteName,
     title: siteTitle,
     description: siteDescription,
     images: [
