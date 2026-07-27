@@ -39,9 +39,10 @@ export const ProjectAbout: FC<ProjectAboutProps> = ({
         <S.HeaderImage
           src={headerImage}
           alt={C.headerImageAlt}
-          width={550}
-          height={432}
+          width={1828}
+          height={848}
           loading="eager"
+          quality={100}
           onError={() => {
             if (headerImage !== C.headerImagePlaceholder) {
               setHeaderImage(C.headerImagePlaceholder);
