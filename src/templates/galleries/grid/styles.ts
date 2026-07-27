@@ -157,8 +157,8 @@ export const ModalImageWrapper = styled.div<{
   $width: number;
   $height: number;
 }>`
-  --modal-image-width: ${({ $width }) => `${$width}px`};
-  --modal-image-height: ${({ $height }) => `${$height}px`};
+  --modal-image-width: ${({ $width }) => `${$width / 10}rem`};
+  --modal-image-height: ${({ $height }) => `${$height / 10}rem`};
   --modal-image-ratio: ${({ $width, $height }) => $width / $height};
   --modal-viewport-width: calc(100vw - 8rem);
   --modal-viewport-height: calc(100vh - 8rem);
