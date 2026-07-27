@@ -1,7 +1,7 @@
 import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
-import { ResponsiveImage } from "@/components/responsive-image";
 import { theme } from "@/styles/theme";
 import styled from "styled-components";
+import Image from "next/image";
 
 export const BrandingCard = styled.div`
   width: 19.2rem;
@@ -32,14 +32,14 @@ export const BrandingCard = styled.div`
   `}
 `;
 
-export const BrandingCardImage = styled(ResponsiveImage)<{
+export const BrandingCardImage = styled(Image)<{
   $width: number;
   $mobileWidth?: number;
 }>`
   width: ${({ $width }) => $width / 10}rem;
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain;
+  height: auto;
 
   ${mediaMaxDesktop1024`
     width: ${({ $mobileWidth, $width }) => ($mobileWidth ?? $width) / 10}rem;

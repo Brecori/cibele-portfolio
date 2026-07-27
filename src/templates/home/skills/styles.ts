@@ -136,6 +136,7 @@ export const ToolsImage = styled(Image)`
   width: 4.4rem;
   height: 4.4rem;
   transition: transform 0.3s ease;
+  border-radius: 0.8rem;
 
   &:hover {
     transform: translateY(-0.4rem) scale(1.05);
