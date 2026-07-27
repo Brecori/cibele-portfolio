@@ -153,14 +153,40 @@ export const GridImage = styled(Image)`
   `}
 `;
 
-export const ModalImageWrapper = styled.div`
-  width: 100%;
-  height: 100%;
+export const ModalImageWrapper = styled.div<{
+  $width: number;
+  $height: number;
+}>`
+  --modal-image-width: ${({ $width }) => `${$width}px`};
+  --modal-image-height: ${({ $height }) => `${$height}px`};
+  --modal-image-ratio: ${({ $width, $height }) => $width / $height};
+  --modal-viewport-width: calc(100vw - 8rem);
+  --modal-viewport-height: calc(100vh - 8rem);
+
+  width: min(
+    var(--modal-image-width),
+    var(--modal-viewport-width),
+    calc(var(--modal-viewport-height) * var(--modal-image-ratio))
+  );
+  height: min(
+    var(--modal-image-height),
+    var(--modal-viewport-height),
+    calc(var(--modal-viewport-width) / var(--modal-image-ratio))
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   img {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: contain;
     border-radius: 0.8rem;
   }
+
+  ${mediaMaxMobile`
+    --modal-viewport-width: calc(100vw - 4rem);
+    --modal-viewport-height: calc(100vh - 4rem);
+  `}
 `;

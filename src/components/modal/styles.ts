@@ -1,4 +1,4 @@
-import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
+import { mediaMaxMobile } from "@/lib/media-query";
 import { theme } from "@/styles/theme";
 import styled from "styled-components";
 
@@ -9,30 +9,24 @@ export const Overlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4rem;
   background-color: rgb(0 0 0 / 0.8);
   opacity: 0;
   visibility: hidden;
 
   ${mediaMaxMobile`
+    padding: 2rem;
     background-color: rgb(0 0 0 / 0.9);
   `}
 `;
 
 export const Container = styled.div`
   position: relative;
-  max-width: 120rem;
-  max-height: 90vh;
   width: 100%;
   height: 100%;
-
-  ${mediaMaxDesktop1024`
-    max-width: 72rem;
-  `}
-
-  ${mediaMaxMobile`
-    max-width: calc(100% - 8rem);
-    max-height: 100%;
-  `}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 export const CloseButton = styled.button`

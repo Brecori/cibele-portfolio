@@ -17,6 +17,8 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
     null,
   );
   const eagerImagesCount = images.specialGrid ? 3 : 5;
+  const selectedImage =
+    selectedImageIndex !== null ? images.imgs[selectedImageIndex] : null;
 
   if (images.imgs.length === 0) {
     return null;
@@ -60,13 +62,19 @@ export const GalleryGrid: FC<GalleryGridProps> = ({ images }) => {
           setSelectedImageIndex(null);
         }}
       >
-        {selectedImageIndex !== null && (
-          <S.ModalImageWrapper>
+        {selectedImage && (
+          <S.ModalImageWrapper
+            $height={selectedImage.height}
+            $width={selectedImage.width}
+          >
             <Image
-              src={images.imgs[selectedImageIndex].src}
-              alt={images.imgs[selectedImageIndex].alt}
-              width={images.imgs[selectedImageIndex].width}
-              height={images.imgs[selectedImageIndex].height}
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              width={selectedImage.width}
+              height={selectedImage.height}
+              quality={100}
+              loading="eager"
+              unoptimized={isGif(selectedImage.src)}
             />
           </S.ModalImageWrapper>
         )}
