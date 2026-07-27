@@ -17,7 +17,6 @@ export const BrandingCard: FC<BrandingCardProps> = ({
         $width={width}
         width={width}
         height={height}
-        unoptimized
         quality={100}
         loading="lazy"
       />
