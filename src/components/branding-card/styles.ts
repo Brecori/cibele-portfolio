@@ -6,6 +6,7 @@ import styled from "styled-components";
 export const BrandingCard = styled.div`
   width: 19.2rem;
   height: 10.08rem;
+  padding: 1.6rem;
   border-radius: 0.8rem;
   background-color: ${theme.white};
   display: flex;
@@ -21,11 +22,13 @@ export const BrandingCard = styled.div`
   ${mediaMaxDesktop1024`
     width: 14.4rem;
     height: 7.56rem;
+    padding: 1.2rem;
   `}
 
   ${mediaMaxMobile`
     width: 19.2rem;
     height: 10.08rem;
+    padding: 1.6rem;
   `}
 `;
 
@@ -34,6 +37,9 @@ export const BrandingCardImage = styled(ResponsiveImage)<{
   $mobileWidth?: number;
 }>`
   width: ${({ $width }) => $width / 10}rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 
   ${mediaMaxDesktop1024`
     width: ${({ $mobileWidth, $width }) => ($mobileWidth ?? $width) / 10}rem;

@@ -1,9 +1,9 @@
 import AnimatedContent from "@/components/animated-content";
 import { ContentParagraph } from "@/components/content-paragraph";
-import { ResponsiveImage } from "@/components/responsive-image";
 import { SectionTitle } from "@/components/section-title";
 import { mediaMaxDesktop1024, mediaMaxMobile } from "@/lib/media-query";
 import { theme } from "@/styles/theme";
+import Image from "next/image";
 import styled from "styled-components";
 
 export const SkillsSection = styled.section`
@@ -132,7 +132,7 @@ export const ToolsRow = styled.div`
   `}
 `;
 
-export const ToolsImage = styled(ResponsiveImage)`
+export const ToolsImage = styled(Image)`
   width: 4.4rem;
   height: 4.4rem;
   transition: transform 0.3s ease;
@@ -142,6 +142,7 @@ export const ToolsImage = styled(ResponsiveImage)`
   }
 
   ${mediaMaxMobile`
-  width: 5rem
+    width: 4.4rem;
+    height: 4.4rem;
   `}
 `;

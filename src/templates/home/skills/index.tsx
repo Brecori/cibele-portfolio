@@ -62,6 +62,8 @@ export const Skills: FC = () => {
               alt={tool.alt}
               width={tool.width}
               height={tool.height}
+              quality={100}
+              unoptimized
               title={tool.title}
             />
           </AnimatedContent>
