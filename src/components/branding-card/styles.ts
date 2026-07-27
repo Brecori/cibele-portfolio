@@ -22,7 +22,6 @@ export const BrandingCard = styled.div`
   ${mediaMaxDesktop1024`
     width: 14.4rem;
     height: 7.56rem;
-    padding: 1.2rem;
   `}
 
   ${mediaMaxMobile`
