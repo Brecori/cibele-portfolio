@@ -15,8 +15,8 @@ export const Hero: FC = () => {
         <Image
           src={C.imageSrc}
           alt={C.imageAlt}
-          width={3051}
-          height={1356}
+          width={2506}
+          height={1243}
           priority
           fetchPriority="high"
           quality={100}

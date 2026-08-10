@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import { theme } from "@/styles/theme";
+import { mediaMaxMobile } from "@/lib/media-query";
 
 export const Menu = styled.div<{ $isOpen: boolean }>`
+  display: none;
   position: fixed;
   top: 10rem;
   left: 0;
@@ -13,6 +15,10 @@ export const Menu = styled.div<{ $isOpen: boolean }>`
   transform: translateY(${({ $isOpen }) => ($isOpen ? "0" : "-100%")});
   pointer-events: ${({ $isOpen }) => ($isOpen ? "auto" : "none")};
   transition:
-    pointer-events 0.7s ease-in-out,
-    transform 0.7s ease-in-out;
+    pointer-events 0.4s ease-in-out,
+    transform 0.4s ease-in-out;
+
+  ${mediaMaxMobile`
+    display: block;
+  `}
 `;

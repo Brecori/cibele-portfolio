@@ -38,13 +38,19 @@ export const HeroImage = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  ${mediaMaxMobile`
+    img {
+      object-position: 65%;
+    }
+  `}
 `;
 
 export const HeroTitle = styled.h1`
   font-weight: 700;
   font-size: 5rem;
   line-height: 1.2em;
-  color: ${theme.white};
+  color: ${theme.black};
   margin-bottom: 1.6rem;
   opacity: 0;
   visibility: hidden;
@@ -56,6 +62,7 @@ export const HeroTitle = styled.h1`
 
   ${mediaMaxMobile`
     font-size: 5.2rem;
+    color: ${theme.white};
   `}
 `;
 
@@ -63,7 +70,7 @@ export const HeroSubtitle = styled.h2`
   font-weight: 400;
   font-size: 4.2rem;
   line-height: 1.2em;
-  color: ${theme.white};
+  color: ${theme.black};
   margin-bottom: 8.9rem;
   opacity: 0;
   visibility: hidden;
@@ -75,5 +82,6 @@ export const HeroSubtitle = styled.h2`
 
   ${mediaMaxMobile`
     font-size: 2.8rem;
+    color: ${theme.white};
   `}
 `;

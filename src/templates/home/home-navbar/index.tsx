@@ -89,34 +89,27 @@ export const HomeNavbar: FC = () => {
         </S.Content>
       </Navbar>
 
-      <ResponsiveElement
-        content={null}
-        breakpoints={{
-          mobile: (
-            <NavbarMenu isOpen={isMenuOpen}>
-              <S.NavbarMenuContainer>
-                <S.NavbarLinks>
-                  {C.links.map((link) => (
-                    <S.NavbarLink key={link.label}>
-                      <a href={link.href} onClick={() => setIsMenuOpen(false)}>
-                        {link.label}
-                      </a>
-                    </S.NavbarLink>
-                  ))}
-                </S.NavbarLinks>
-                <S.Button
-                  href={C.contactButton.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  <span>{C.contactButton.label}</span>
-                </S.Button>
-              </S.NavbarMenuContainer>
-            </NavbarMenu>
-          ),
-        }}
-      />
+      <NavbarMenu isOpen={isMenuOpen}>
+        <S.NavbarMenuContainer>
+          <S.NavbarLinks>
+            {C.links.map((link) => (
+              <S.NavbarLink key={link.label}>
+                <a href={link.href} onClick={() => setIsMenuOpen(false)}>
+                  {link.label}
+                </a>
+              </S.NavbarLink>
+            ))}
+          </S.NavbarLinks>
+          <S.Button
+            href={C.contactButton.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <span>{C.contactButton.label}</span>
+          </S.Button>
+        </S.NavbarMenuContainer>
+      </NavbarMenu>
     </>
   );
 };
