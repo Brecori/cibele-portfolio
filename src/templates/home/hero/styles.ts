@@ -38,12 +38,6 @@ export const HeroImage = styled.div`
     height: 100%;
     object-fit: cover;
   }
-
-  ${mediaMaxMobile`
-    img {
-      object-position: 65%;
-    }
-  `}
 `;
 
 export const HeroTitle = styled.h1`
